@@ -1,0 +1,31 @@
+development:
+  adapter: postgresql
+  host: localhost
+  database: florsan_development
+  username: florsan_dev
+  password: florsan_pass
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
+
+test: &test
+  adapter: postgresql
+  host: localhost
+  database: florsan_test
+  username: florsan_dev
+  password: florsan_pass
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
