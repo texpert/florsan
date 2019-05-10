@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_19_214522) do
+ActiveRecord::Schema.define(version: 2019_05_10_215252) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -117,8 +117,8 @@ ActiveRecord::Schema.define(version: 2018_07_19_214522) do
   end
 
   create_table "cama_posts", id: :serial, force: :cascade do |t|
-    t.string "title"
-    t.string "slug"
+    t.text "title"
+    t.text "slug"
     t.text "content"
     t.text "content_filtered"
     t.string "status", default: "published"
@@ -154,7 +154,7 @@ ActiveRecord::Schema.define(version: 2018_07_19_214522) do
     t.text "description"
     t.integer "parent_id"
     t.integer "count"
-    t.string "name"
+    t.text "name"
     t.string "slug"
     t.integer "term_group"
     t.integer "term_order"
