@@ -45,7 +45,6 @@ public/assets
 log/*
 !/log/.keep
 /tmp
-.ruby-version
 .sass-cache/
 .idea/
 *~
