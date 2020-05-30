@@ -1,11 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version currently used: 2.5.8
 
 * System dependencies
 
@@ -19,6 +14,65 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions: `git push heroku master` or `git push heroku branchname:master` 
 
-* ...
+##### TODO: remove public read access: AWS bucket policy has `public read` untill the issue in Camaleon CMS will got
+ solved https://github.com/owen2345/camaleon-cms/issues/955
+
+Current bucket policy:
+
+```
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1590871751896",
+    "Statement": [
+        {
+            "Sid": "Stmt1590871689636",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::Account-ID:user/username"
+            },
+            "Action": [
+                "s3:DeleteObject",
+                "s3:DeleteObjectTagging",
+                "s3:DeleteObjectVersion",
+                "s3:DeleteObjectVersionTagging",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:GetObjectTagging",
+                "s3:GetObjectVersion",
+                "s3:GetObjectVersionAcl",
+                "s3:GetObjectVersionForReplication",
+                "s3:GetObjectVersionTagging",
+                "s3:ListBucket",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListBucketVersions",
+                "s3:ListMultipartUploadParts",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:PutObjectTagging",
+                "s3:PutObjectVersionAcl",
+                "s3:PutObjectVersionTagging",
+                "s3:PutReplicationConfiguration",
+                "s3:ReplicateDelete",
+                "s3:ReplicateObject",
+                "s3:ReplicateTags",
+                "s3:RestoreObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::bucketname",
+                "arn:aws:s3:::bucketname/*"
+            ]
+        },
+        {
+            "Sid": "Stmt1590871689636",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::bucketname/*"
+        }
+    ]
+}
+```
