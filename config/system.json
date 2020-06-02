@@ -6,7 +6,12 @@
   "db_prefix": "cama_", // prefix name for database tables
   "relative_url_root": "", // URL prefix, for example to get http://localhost:3000/blog/, this should be "blog"
   "auto_include_migrations": false, // permit to avoid auto include of all migrations of camaleon cms and its related plugins
-  "hooks": {}
+  "helpers": ["ApplicationHelper"],
+    "hooks": {
+      "on_uploader": [
+        "adjust_aws_settings"
+      ]
+    }
 }
 
 // Note: after any change in this file, you need to restart your server to apply changes.
