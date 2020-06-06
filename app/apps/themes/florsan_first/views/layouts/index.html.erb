@@ -13,49 +13,39 @@
   <%= javascript_include_tag theme_asset_path("js/main.js") %>
   <%= raw the_head %>
 </head>
-<body>
+<body style="padding-top: 260px;">
 <div id="page" class="hfeed site">
   <!-- header -->
-  <nav class="navbar navbar-default navbar-fixed-top site-header">
-    <div class="container">
-      <%= raw current_site.draw_languages("language list-inline pull-right", true) %>
-      <a class="home-link" href="<%= current_site.the_url %>" title="<%= current_site.the_title %>" rel="home">
-        <h1 class="site-title"><%= current_site.the_title %></h1>
-        <h2 class="site-description"><%= current_site.the_content %></h2>
-      </a>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse navbar-responsive-collapse">
-        <%= raw draw_menu({container_id: "menu-menu-1", container_class: "nav navbar-nav navbar-left"}) %>
-        <%= render partial: 'partials/search_form' %>
-        <ul class="nav navbar-nav nav-menu" style="float: right;">
-          <% if signin?  %>
-            <li class="dropdown">
-              <a class="dropdown-toggle" href="#"><img src="<%= cama_current_user.decorate.the_avatar %>" style="max-width: 24px; border-radius: 50%" alt=""/> <%= cama_current_user.username %></a>
-              <ul class="dropdown-menu">
-                <li><a href="<%= cama_admin_dashboard_path %>"><%= I18n.t('camaleon_cms.common.dashboard') %></a></li>
-                <li><a href="<%= cama_admin_profile_path %>"><%= I18n.t('camaleon_cms.common.profile') %></a></li>
-                <li><a href="<%= cama_admin_logout_path %>"><%= I18n.t('camaleon_cms.common.logout') %></a></li>
-              </ul>
-            </li>
-          <% else %>
-            <li class="dropdown">
-              <a id="login-user" class="dropdown-toggle" href="#">Login / Register</a>
-              <ul class="dropdown-menu">
-                <li><a href="<%= cama_admin_login_path %>"><%= I18n.t('camaleon_cms.common.login') %></a></li>
-                <li><a href="<%= cama_admin_register_path %>"><%= I18n.t('camaleon_cms.common.register') %></a></li>
-              </ul>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-default navbar-fixed-top"><div class="site-header"><div class="container">
+    <%= raw current_site.draw_languages("language list-inline pull-right", true) %>
+    <a class="home-link" href="<%= current_site.the_url %>" title="<%= current_site.the_title %>" rel="home">
+      <h1 class="site-title"><%= current_site.the_title %></h1>
+      <h2 class="site-description"><%= current_site.the_content %></h2></a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <%= raw draw_menu({container_id: "menu-menu-1", container_class: "nav navbar-nav navbar-left"}) %>
+      <%= render partial: 'partials/search_form' %>
+      <ul class="nav navbar-nav nav-menu" style="float: right;">
+        <% if signin?  %>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#">
+              <img src="<%= cama_current_user.decorate.the_avatar %>" style="max-width: 24px; border-radius: 50%" alt=""/>
+              <%= cama_current_user.username %></a>
+            <ul class="dropdown-menu">
+              <li><a href="<%= cama_admin_dashboard_path %>"><%= I18n.t('camaleon_cms.common.dashboard') %></a></li>
+              <li><a href="<%= cama_admin_profile_path %>"><%= I18n.t('camaleon_cms.common.profile') %></a></li>
+              <li><a href="<%= cama_admin_logout_path %>"><%= I18n.t('camaleon_cms.common.logout') %></a></li></ul></li>
+        <% else %>
+          <li class="dropdown">
+            <a id="login-user" class="dropdown-toggle" href="#">Login / Register</a>
+            <ul class="dropdown-menu">
+              <li><a href="<%= cama_admin_login_path %>"><%= I18n.t('camaleon_cms.common.login') %></a></li>
+              <li><a href="<%= cama_admin_register_path %>"><%= I18n.t('camaleon_cms.common.register') %></a></li>
+            </ul></li>
+        <% end %>
+  </ul></div></div></div></nav>
   <!-- ./header -->
   <div id="main" class="site-main">
     <div id="primary" class="content-area">
