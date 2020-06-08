@@ -814,14 +814,6 @@ img.wp-smiley,
  * 4.1 Site Header
  * ----------------------------------------------------------------------------
  */
-.site-header{
-	background: asset-url("themes/florsan_first/assets/images/circle.png") no-repeat scroll center top / 1600px auto;
-}
-
-.site-header {
-	position: relative;
-}
-
 .site-header .home-link {
 	color: #141412;
 	display: block;
@@ -833,7 +825,7 @@ img.wp-smiley,
 	width: 100%;
 }
 
-.site-header .site-title:hover {
+.site-title:hover {
 	text-decoration: underline;
 }
 
