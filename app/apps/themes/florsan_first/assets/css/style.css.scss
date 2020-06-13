@@ -783,7 +783,7 @@ img.wp-smiley,
 	border-left: 1px solid #f2f2f2;
 	border-right: 1px solid #f2f2f2;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 100%;
 	width: 100%;
 }
 
@@ -804,57 +804,15 @@ img.wp-smiley,
 	max-width: 1040px;
 }
 
-
 /**
  * 4.0 Header
  * ----------------------------------------------------------------------------
  */
 
 /**
- * 4.1 Site Header
- * ----------------------------------------------------------------------------
- */
-.site-header .home-link {
-	color: #141412;
-	display: block;
-	margin: 0 auto;
-	max-width: 1080px;
-	min-height: 230px;
-	padding: 0 20px;
-	text-decoration: none;
-	width: 100%;
-}
-
-.site-title:hover {
-	text-decoration: underline;
-}
-
-.site-title {
-	font-size: 60px;
-	font-weight: bold;
-	line-height: 1;
-	margin: 0;
-	padding: 58px 0 10px;
-}
-
-.site-description {
-	font: 300 italic 24px "Source Sans Pro", Helvetica, sans-serif;
-	margin: 0;
-}
-
-
-/**
  * 4.2 Navigation
  * ----------------------------------------------------------------------------
  */
-
-.main-navigation {
-	clear: both;
-	margin: 0 auto;
-	max-width: 1080px;
-	min-height: 45px;
-	position: relative;
-}
 
 ul.nav-menu,
 div.nav-menu > ul {
@@ -993,7 +951,7 @@ ul.nav-menu .focus > ul,
 .navbar {
 	background-color: #f7f5e7;
 	margin: 0 auto;
-	max-width: 1600px;
+	max-width: 100%;
 	width: 100%;
 }
 
@@ -2659,11 +2617,6 @@ footer.entry-meta {
 	color: #ea9629;
 }
 
-/* Search widget */
-.search-form .search-submit {
-	display: none;
-}
-
 /* RSS Widget */
 .widget_rss .rss-date {
 	display: block;
@@ -2969,10 +2922,6 @@ footer.entry-meta {
 	.site-header .home-link {
 		min-height: 0;
 	}
-	.site-title {
-		font-size: 36px;
-		padding: 8px 0 10px;
-	}
 	.entry-content img.alignleft,
 	.entry-content .wp-caption.alignleft {
 		margin-left: 0;
@@ -2996,10 +2945,6 @@ footer.entry-meta {
 }
 
 @media (max-width: 643px) {
-	.site-title {
-		font-size: 30px;
-	}
-
 	#content .entry-header,
 	#content .entry-content,
 	#content .entry-summary,
@@ -3189,13 +3134,6 @@ footer.entry-meta {
 
 /* Mobile devices */
 @media (max-width: 359px) {
-	.site-title {
-		font-weight: normal;
-	}
-	.site-description {
-	    clip: rect(1px, 1px, 1px, 1px);
-	    position: absolute;
-	}
 	.gallery {
 		margin-left: 0;
 	}
@@ -3308,15 +3246,6 @@ footer.entry-meta {
 		min-height: 0;
 	}
 
-	.site-title {
-		color: #000;
-		font-size: 21pt;
-	}
-
-	.site-description {
-		font-size: 10pt;
-	}
-
 	.author-avatar,
 	.site-footer,
 	.comment-respond,
@@ -3327,7 +3256,6 @@ footer.entry-meta {
 	.page-links,
 	.site-content nav,
 	.widget-area,
-	.main-navigation,
 	.navbar,
 	.more-link {
 		display: none;

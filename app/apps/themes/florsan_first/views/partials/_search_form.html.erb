@@ -1,8 +1,6 @@
-<%= form_tag(cama_search_path, :method => "get", :class => "form-search form-horizontal search-form") do %>
-    <label>
-        <span class="screen-reader-text"><%= t("camaleon_cms.common.search") %>:</span>
-        <input type="search" title="Search:" name="q" value="" placeholder="<%= t("camaleon_cms.common.search") %>..." class="search-field form-control" />
-    </label>
-    <input type="submit" value="<%= t("camaleon_cms.common.search") %>" class="search-submit" />
+<%= form_tag(cama_search_path, :method => "get", :class => "navbar-form navbar-right") do %>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="<%= t("camaleon_cms.common.search") %>">
+  </div>
+  <button type="submit" class="btn btn-default"><%= t("camaleon_cms.common.search") %></button>
 <% end %>
-
