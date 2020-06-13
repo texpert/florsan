@@ -11,22 +11,23 @@
   <%= stylesheet_link_tag theme_asset_path("css/main.css") %>
   <%= stylesheet_link_tag theme_asset_path("genericons/genericons.css") %>
   <%= javascript_include_tag theme_asset_path("js/main.js") %>
-  <%= raw the_head %>
+  <%= raw the_head(description: current_site.the_content) %>
 </head>
-<body style="padding-top: 240px;">
-<div id="page" class="hfeed site">
+<body class="<%= is_home? ? "home-page" : "inner-page" %>" style="padding-top: 75px;">
+<div id="page" class="site">
   <!-- header -->
-  <nav class="navbar navbar-default navbar-fixed-top" style="opacity: 0.3;"><div class="container">
-    <%= raw current_site.draw_languages("language list-inline pull-right", true) %>
-    <%= render partial: 'partials/search_form' %>
-    <a class="home-link" href="<%= current_site.the_url %>" title="<%= current_site.the_title %>" rel="home">
-      <h1 class="site-title"><%= current_site.the_title %></h1>
-      <h2 class="site-description"><%= current_site.the_content %></h2></a>
+  <nav class="navbar navbar-default navbar-fixed-top" style="opacity: 0.7;"><div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-    <div class="navbar-collapse collapse navbar-responsive-collapse">
-      <%= raw draw_menu({container_id: "menu-menu-1", container_class: "nav navbar-nav navbar-left"}) %>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-menu">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="<%= current_site.the_url %>"><%= current_site.the_title %></a>
+    </div>
+    <div class="navbar-collapse collapse navbar-menu">
+      <ul class="nav navbar-nav">
+        <%= raw draw_menu({container_id: "menu-menu-1", container_class: "nav navbar-nav navbar-left"}) %>
+      </ul>
+      <%= render partial: 'partials/search_form' %>
+      <%= raw current_site.draw_languages("language list-inline pull-right", true) %>
       <ul class="nav navbar-nav nav-menu navbar-right">
         <% if signin?  %>
           <li class="dropdown">
