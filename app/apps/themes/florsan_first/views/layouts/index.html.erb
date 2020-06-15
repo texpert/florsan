@@ -7,10 +7,9 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>FlorSan</title>
   <!-- END META SECTION -->
-  <%#= javascript_include_tag theme_asset_path("js/main.js") %>
-  <%= stylesheet_link_tag theme_asset_path("css/main.css") %>
+  <%= stylesheet_link_tag(theme_asset_path("css/main.css")) %>
   <%= stylesheet_link_tag theme_asset_path("genericons/genericons.css") %>
-  <%= javascript_include_tag theme_asset_path("js/main.js") %>
+  <%= javascript_include_tag(theme_asset_path("js/main.js"), defer: 'defer') %>
   <%= raw the_head(description: current_site.the_content) %>
 </head>
 <body class="<%= is_home? ? "home-page" : "inner-page" %>" style="padding-top: 75px;">
