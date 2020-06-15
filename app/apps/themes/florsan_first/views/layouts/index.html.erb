@@ -7,8 +7,8 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>FlorSan</title>
   <!-- END META SECTION -->
-  <%= stylesheet_link_tag(theme_asset_path("css/main.css")) %>
-  <%= stylesheet_link_tag theme_asset_path("genericons/genericons.css") %>
+  <%= preload_link_tag(theme_asset_path("css/main.css"), as: "style", onload: "this.rel='stylesheet'") %>
+  <%= preload_link_tag(theme_asset_path("genericons/genericons.css"), as: "style", onload: "this.rel='stylesheet'") %>
   <%= javascript_include_tag(theme_asset_path("js/main.js"), defer: 'defer') %>
   <%= raw the_head(description: current_site.the_content) %>
 </head>
