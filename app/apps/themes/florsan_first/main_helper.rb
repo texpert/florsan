@@ -33,8 +33,8 @@ module Themes::FlorsanFirst::MainHelper
 
     # # Sample Meta Value
     # theme.set_meta("installed_at", Time.current.to_s) # save a custom value
-    theme.add_field({"name"=>"Footer message", "slug"=>"footer"},{field_key: "editor", default_value: 'Copyright
-&copy; 2020 - Florsan. All rights reservated.'})
+    theme.add_field({ 'name' => 'Footer message', 'slug' => 'footer'},
+                    { field_key: 'editor', default_value: 'Copyright&copy; 2020 - Florsan. All rights reservated.'})
   end
 
   # callback executed after theme uninstalled
