@@ -7,7 +7,7 @@
   }
 }
 
-/************ nav-var multi level *************/
+/************ nav-bar multi level *************/
 .navbar-nav,
 .navbar-right{
   .dropdown:hover > ul{
@@ -28,6 +28,18 @@
       border-top: 4px solid transparent;
       border-left: 4px solid;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-fixed-top {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    opacity: 0.7;
   }
 }
 
