@@ -18,17 +18,16 @@
                 <span class="tags-links">
                     <%= raw get_taxonomy(post.the_tags.decorate, 'tag') %>
                 </span>
-        </div><!-- .entry-meta -->
-    </header><!-- .entry-header -->
+        </div>
+    </header>
     <div class="entry-content">
         <%= raw post.the_content %>
-    </div><!-- .entry-content -->
+    </div>
     <% if post.the_comments.count > 0 %>
         <footer class="entry-meta">
             <div class="comments-link">
                 <a href="<%= post.the_url %>">Ver los comentarios</a>
-            </div><!-- .comments-link -->
-
-        </footer><!-- .entry-meta -->
+            </div>
+        </footer>
     <% end %>
 </article>
