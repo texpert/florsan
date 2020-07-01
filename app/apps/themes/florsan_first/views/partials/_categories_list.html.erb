@@ -1,5 +1,4 @@
 <div id="carousel_categories" class="carousel slide categories-carousel">
-    <!-- Carousel items -->
     <div class="carousel-inner">
         <% categories.each_slice(6).each_with_index do |_cats, index| %>
             <div class='item <%= "active" if index == 0 %>'>
@@ -15,9 +14,9 @@
                 </div>
             </div>
         <% end %>
-    </div><!--.carousel-inner-->
+    </div>
     <% if categories.size > 6 %>
         <a data-slide="prev" href="#carousel_categories" class="left carousel-control">‹</a>
         <a data-slide="next" href="#carousel_categories" class="right carousel-control">›</a>
     <% end %>
-</div><!--.Carousel-->
+</div>

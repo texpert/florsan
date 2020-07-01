@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- META SECTION -->
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>FlorSan</title>
-  <!-- END META SECTION -->
   <%= preload_link_tag(theme_asset_path("images/sun_downhill.jpg"), as: "image") %>
   <%= preload_link_tag(theme_asset_path("css/main.css"), as: "style", onload: "this.rel='stylesheet'") %>
   <%= preload_link_tag(theme_asset_path("genericons/genericons.css"), as: "style", onload: "this.rel='stylesheet'") %>
@@ -15,7 +12,6 @@
 </head>
 <body class="<%= is_home? ? "home-page" : "inner-page" %>" style="padding-top: 75px;">
 <div id="page" class="site">
-  <!-- header -->
   <nav class="navbar navbar-default navbar-fixed-top"><div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-menu">
@@ -48,23 +44,20 @@
         <% end %>
       </ul></div></div></nav>
   <div id="background"></div>
-  <!-- ./header -->
   <div id="main" class="site-main">
     <div id="primary" class="content-area">
       <div id="content" class="site-content" role="main">
         <%= yield %>
-      </div><!-- #content -->
-    </div><!-- #primary -->
+      </div>
+    </div>
   </div>
-  <!-- footer -->
   <footer id="colophon" class="site-footer" role="contentinfo">
     <div role="complementary" class="sidebar-container" id="secondary">
     </div>
     <div class="site-info">
       <%= raw current_theme.the_field("footer") %>
-    </div><!-- .site-info -->
-  </footer><!-- #colophon -->
-  <!-- ./footer -->
+    </div>
+  </footer>
 </div>
 </body>
 </html>

@@ -3,8 +3,8 @@
         <div class="image <%= "image_children" if children.present? %>">
             <div class="thumbnail">
                 <%= image_tag user.the_avatar, class: "img-responsive avatar"%>
-            </div><!-- /thumbnail -->
-        </div><!-- /col-sm-1 -->
+            </div>
+        </div>
         <div class="comment-content text <%= "text_children" if children.present? %>">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -12,9 +12,9 @@
                 </div>
                 <div class="panel-body">
                     <%= raw comment.content %>
-                </div><!-- /panel-body -->
-            </div><!-- /panel panel-default -->
-        </div><!-- /col-sm-5 -->
+                </div>
+            </div>
+        </div>
     </div>
     <%= render partial: "partials/comments_list", locals: { comments: comment.children.approveds, children: "present" }  if comment.children.present? %>
 <% end %>
