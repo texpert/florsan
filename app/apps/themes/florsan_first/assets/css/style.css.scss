@@ -92,7 +92,7 @@ audio:not([controls]) {
 }
 
 html {
-	font-size: unquote("clamp(16px, 16px + (20 - 16) * (100vw - 320px)/(2880 - 320), 20px)");
+	font-size: unquote('clamp(16px, 16px + (20 - 16) * (100vw - 320px)/(2880 - 320), 20px)');
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
