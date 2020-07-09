@@ -4,14 +4,9 @@ ruby File.read('.ruby-version').strip
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
-gem 'camaleon_cms',  '>= 2.4.6'
-# gem "camaleon_cms", github: 'owen2345/camaleon-cms' # current development version
-
-# Use CoffeeScript for .coffee assets and views
+gem 'camaleon_cms',  '>= 2.5.3'
 gem 'coffee-rails', '~> 5.0'
-
-gem 'draper', '~> 3' # only for Rails 5
+gem 'draper', '~> 3'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
@@ -20,13 +15,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 gem 'mini_racer', platforms: :ruby
 gem 'pg'
-# Use Puma as the app server
 gem 'puma', '~> 4.2'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0'
-# Use SCSS for stylesheets
 gem 'sassc-rails'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 
 # Use Uglifier as compressor for JavaScript assets
