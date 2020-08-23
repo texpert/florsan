@@ -1,4 +1,4 @@
-<% (current_site.the_post_type("post").the_posts.decorate rescue {}).each_with_index do |post, index| %>
+<% (current_site.the_post_type("post").the_posts.reorder(published_at: :desc).decorate rescue {}).each_with_index do |post, index| %>
     <article class="post-<%= index %> post type-post status-publish format-standard hentry category-sin-categoria" id="post-<%= index %>">
         <header class="entry-header">
             <div class="entry-thumbnail">
@@ -10,7 +10,7 @@
             <div class="entry-meta">
                 <span class="date">
                     <a rel="bookmark" title="Enlace permanente a <%= post.the_title %>" href="<%= post.the_url %>">
-                        <time datetime="" class="entry-date"><%= post.the_created_at %></time>
+                        <time datetime="" class="entry-date"><%= l(post.published_at, format: :long) %></time>
                     </a>
                 </span>
                 <span class="categories-links">
