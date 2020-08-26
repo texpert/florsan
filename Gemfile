@@ -6,7 +6,7 @@ ruby File.read('.ruby-version').strip
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'camaleon_cms',  '>= 2.5.3.1'
 gem 'coffee-rails', '~> 5.0'
-gem 'draper', '~> 3'
+gem 'draper', '>= 3'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
@@ -51,9 +51,9 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.0.0.alpha6'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  gem 'webdrivers', '~> 4.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
