@@ -89,6 +89,8 @@ GEM
     cama_contact_form (0.0.30)
       rails
       recaptcha (>= 5.0)
+    cama_language_editor (1.2)
+      rails (>= 4.2.1)
     cama_meta_tag (1.7)
       rails (>= 4.1.0)
     camaleon_cms (2.5.3.1)
@@ -305,6 +307,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
+  cama_language_editor
   camaleon_cms (>= 2.5.3.1)
   capybara (>= 2.15, < 4.0)
   coffee-rails (~> 5.0)
