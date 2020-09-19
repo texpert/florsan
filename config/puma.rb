@@ -18,8 +18,11 @@ environment ENV['RACK_ENV'] || ENV['RAILS_ENV'] || 'development'
 pidfile ENV.fetch('PIDFILE') { 'tmp/pids/server.pid' }
 
 if workers_count > 1
-  preload_app!
   workers workers_count
+  preload_app!
+  nakayoshi_fork true
+  wait_for_less_busy_worker
+  fork_worker
 end
 
 # Allow puma to be restarted by `rails restart` command.

@@ -15,7 +15,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 gem 'mini_racer', platforms: :ruby
 gem 'pg'
-gem 'puma', '~> 4.2'
+gem 'puma'
 gem 'rails', '~> 6.0'
 gem 'sassc-rails'
 gem 'turbolinks', '~> 5'
