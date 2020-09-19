@@ -68,3 +68,5 @@ sftp-config.json
 # Ignore localhost saved request for RubyMine REST Client
 doc/localhost*.xml
 .vscode
+
+/config/credentials/development.key
