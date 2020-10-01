@@ -16,8 +16,9 @@
 
 * Deployment instructions: `git push heroku master` or `git push heroku branchname:master` 
 
-##### TODO: remove public read access: AWS bucket policy has `public read` untill the issue in Camaleon CMS will got
- solved https://github.com/owen2345/camaleon-cms/issues/955
+
+## TODO: remove public read access: AWS bucket policy has `public read` until [the issue in Camaleon CMS will got solved](https://github.com/owen2345/camaleon-cms/issues/955)
+
 
 Current bucket policy:
 
