@@ -23,19 +23,20 @@ jobs:
 
     # Customize the ruby version depending on your needs
     - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@v1.46.0
       with:
-        ruby-version: '2.6'
+        ruby-version: 2.6.6
 
     - name: Setup Brakeman
-      env:
-        BRAKEMAN_VERSION: '4.10' # SARIF support is provided in Brakeman version 4.10+
+#       env:
+#         BRAKEMAN_VERSION: '4.10' # SARIF support is provided in Brakeman version 4.10+
       run: |
-        gem install brakeman --version $BRAKEMAN_VERSION
+        gem install brakeman
+#        gem install brakeman --version $BRAKEMAN_VERSION
 
     # Execute Brakeman CLI and generate a SARIF output with the security issues identified during the analysis
     - name: Scan
-      continue-on-error: true
+#      continue-on-error: true
       run: |
         brakeman -f json > tmp/brakeman.json || exit 0
     # brakeman -f sarif -o output.sarif.json .
@@ -49,5 +50,5 @@ jobs:
     - name: Brakeman
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         REPORT_PATH: tmp/brakeman.json
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
