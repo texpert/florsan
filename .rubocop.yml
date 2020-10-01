@@ -16,6 +16,7 @@ AllCops:
     - 'bin/**/*'
     - 'db/**/*'
     - 'node_modules/**/*'
+    - 'public/assets/**/*'
   # Default formatter will be used if no -f/--format option is given.
   DisplayCopNames: true
   # Style guide URLs are not displayed in offense messages by default. Change

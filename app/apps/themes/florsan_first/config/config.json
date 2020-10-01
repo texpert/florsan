@@ -10,7 +10,7 @@
   ],
   "hooks": {
     "on_active": ["florsan_first_on_install_theme"],
-    "on_inactive": ["florsan_first_on_uninstall_theme"],
+    "on_inactive": ["florsan_first_uninstall_theme"],
     "on_theme_settings": ["florsan_first_settings"]
   }
 }

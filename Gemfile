@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').strip
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'camaleon_cms',  '>= 2.5.3.1'
+gem 'camaleon_cms', '>= 2.5.3.1'
 gem 'coffee-rails', '~> 5.0'
 gem 'draper', '>= 3'
 
@@ -61,7 +63,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 
 #################### Camaleon CMS include all gems for plugins and themes ####################
 require './lib/plugin_routes'
