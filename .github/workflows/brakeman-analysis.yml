@@ -37,7 +37,8 @@ jobs:
     - name: Scan
       continue-on-error: true
       run: |
-        brakeman -f sarif -o output.sarif.json .
+        brakeman -f json > tmp/brakeman.json || exit 0
+    # brakeman -f sarif -o output.sarif.json .
 
     # Upload the SARIF file generated in the previous step
 #     - name: Upload SARIF
@@ -49,4 +50,4 @@ jobs:
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        REPORT_PATH: output.sarif.json
+        REPORT_PATH: tmp/brakeman.json
