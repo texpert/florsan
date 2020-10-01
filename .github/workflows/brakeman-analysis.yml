@@ -38,7 +38,7 @@ jobs:
         brakeman -f sarif -o output.sarif.json
 
     # Execute Brakeman CLI and generate a brakeman.json output with the security issues identified during the analysis
-    - name: Brakeman SARIF Scan
+    - name: Brakeman Scan
       continue-on-error: true
       run: |
         brakeman -f json > brakeman.json || exit 0
@@ -49,7 +49,7 @@ jobs:
       with:
         sarif_file: output.sarif.json
   
-    - name: Brakeman
+    - name: Brakeman Report
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
         REPORT_PATH: brakeman.json
