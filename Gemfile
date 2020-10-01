@@ -41,7 +41,7 @@ end
 group :development do
   gem 'cama_language_editor'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'rubocop', '0.90', require: false
+  gem 'rubocop', '0.88', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
