@@ -28,18 +28,15 @@ jobs:
         ruby-version: 2.6.6
 
     - name: Setup Brakeman
-#       env:
-#         BRAKEMAN_VERSION: '4.10' # SARIF support is provided in Brakeman version 4.10+
       run: |
         gem install brakeman
-#        gem install brakeman --version $BRAKEMAN_VERSION
 
     # Execute Brakeman CLI and generate a SARIF output with the security issues identified during the analysis
     - name: Scan
 #      continue-on-error: true
       run: |
-        brakeman -f json > brakeman.json || exit 0
-    # brakeman -f sarif -o output.sarif.json .
+         brakeman -f sarif -o output.sarif.json .
+#        brakeman -f json > brakeman.json || exit 0
 
     # Upload the SARIF file generated in the previous step
 #     - name: Upload SARIF
@@ -50,5 +47,5 @@ jobs:
     - name: Brakeman
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
-        REPORT_PATH: brakeman.json
+        REPORT_PATH: output.sarif.json
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
