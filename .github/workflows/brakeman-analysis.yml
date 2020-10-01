@@ -19,7 +19,7 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2.3.3
 
     # Customize the ruby version depending on your needs
     - name: Setup Ruby
@@ -38,7 +38,7 @@ jobs:
     - name: Scan
 #      continue-on-error: true
       run: |
-        brakeman -f json > tmp/brakeman.json || exit 0
+        brakeman -f json > brakeman.json || exit 0
     # brakeman -f sarif -o output.sarif.json .
 
     # Upload the SARIF file generated in the previous step
@@ -50,5 +50,5 @@ jobs:
     - name: Brakeman
       uses: devmasx/brakeman-linter-action@v1.0.0
       env:
-        REPORT_PATH: tmp/brakeman.json
+        REPORT_PATH: brakeman.json
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
