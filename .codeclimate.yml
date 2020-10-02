@@ -1,7 +1,36 @@
 version: "2"
 exclude_patterns:
+  - "db/**/*"
+  - "log/**/*"
+  - "node_modules/**/*"
   - "public/**/*"
+  - "tmp/**/*"
+  - "vendor/**/*"
 plugins:
   rubocop:
     enabled: true
     channel: 'rubocop-0-88'
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  eslint:
+    enabled: true
+    channel: 'eslint-7'
+    config:
+      extensions:
+        - .es6
+        - .js
+        - .jsx
+        - .mjs
+  fixme:
+    enabled: true
+    config:
+      strings:
+        - FIXME
+        - BUG
+        - CUSTOM
+  markdownlint:
+    enabled: true
+  stylelint:
+    enabled: true
