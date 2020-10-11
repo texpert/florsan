@@ -1,9 +1,7 @@
 {
   "name": "florsan",
   "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.3-3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^7.10.0",
     "stylelint": "^13.7.2",
