@@ -17,8 +17,6 @@ require 'active_record/railtie'
 require 'sprockets/railtie'
 require 'rails/test_unit/railtie'
 
-Rails.autoloaders.main.ignore(Rails.root.join('app/channels/application_cable'))
-
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -34,3 +32,5 @@ module Florsan
     # the framework and any gems in your application.
   end
 end
+
+Rails.autoloaders.main.ignore(Rails.root.join('app/channels/application_cable'))
