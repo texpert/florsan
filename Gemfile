@@ -25,6 +25,7 @@ gem 'turbolinks', '~> 5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+gem 'webpacker', git: 'https://github.com/rails/webpacker'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
