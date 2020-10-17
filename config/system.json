@@ -7,5 +7,9 @@
   "db_prefix": "cama_",
   "relative_url_root": "",
   "auto_include_migrations": false,
-  "hooks": {}
+  "helpers": ["ApplicationHelper"],
+  "hooks": {
+    "on_uploader": ["adjust_aws_settings"],
+    "uploader_aws_before_upload": ["content_type_only_for_svg"]
+  }
 }
