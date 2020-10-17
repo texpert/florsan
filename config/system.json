@@ -1,5 +1,6 @@
 {
   "admin_path_name": "bashkancapo",
+  "available_languages": ["en", "md", "ru"],
   "share_sessions": true,
   "default_user_role": "client",
   "users_share_sites": true,
