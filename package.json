@@ -1,7 +1,9 @@
 {
   "name": "florsan",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@rails/webpacker": "https://github.com/rails/webpacker.git"
+  },
   "devDependencies": {
     "eslint": "^7.10.0",
     "stylelint": "^13.7.2",
