@@ -10,7 +10,7 @@
     "eslint": "^7.10.0",
     "stylelint": "^13.7.2",
     "stylelint-config-standard": "^20.0.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "https://github.com/webpack/webpack-dev-server#v4"
   },
   "babel": {
     "presets": [
