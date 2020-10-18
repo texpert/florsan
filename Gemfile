@@ -21,7 +21,6 @@ gem 'pg'
 gem 'puma'
 gem 'rails', '~> 6.0'
 gem 'sassc-rails'
-gem 'turbolinks', '~> 5'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

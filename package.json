@@ -2,9 +2,11 @@
   "name": "florsan",
   "private": true,
   "dependencies": {
+    "@rails/ujs": "^6.0.3-4",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
     "core-js": "^3.6.5",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "turbolinks": "^5.2.0"
   },
   "devDependencies": {
     "eslint": "^7.10.0",
