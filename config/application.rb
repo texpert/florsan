@@ -2,7 +2,7 @@
 
 require_relative 'boot'
 
-# require 'rails/all'
+require 'rails'
 
 # require "action_cable/engine"
 # require "action_mailbox/engine"
