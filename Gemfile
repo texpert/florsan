@@ -7,7 +7,8 @@ ruby File.read('.ruby-version').strip
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'camaleon_cms', '>= 2.5.3.1'
-gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
+# gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
+gem 'camaleon_cms', path: '/Users/thunder/dev/ruby/camaleon-cms'
 gem 'coffee-rails', '~> 5.0'
 gem 'draper', '>= 3'
 
@@ -20,7 +21,6 @@ gem 'mini_racer', platforms: :ruby
 gem 'pg'
 gem 'puma'
 gem 'rails', '~> 6.0'
-gem 'sassc-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -40,7 +40,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'cama_language_editor'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop', '0.90', require: false
   gem 'rubocop-performance'
