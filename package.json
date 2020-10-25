@@ -4,7 +4,10 @@
   "dependencies": {
     "@rails/ujs": "^6.0.3-4",
     "@rails/webpacker": "https://github.com/rails/webpacker.git",
+    "coffee-loader": "^1.0.1",
+    "coffeescript": "1.12.7",
     "core-js": "^3.6.5",
+    "rails-erb-loader": "^5.5.2",
     "regenerator-runtime": "^0.13.7",
     "turbolinks": "^5.2.0"
   },
