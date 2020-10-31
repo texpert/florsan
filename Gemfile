@@ -4,11 +4,13 @@ source 'https://rubygems.org'
 
 ruby File.read('.ruby-version').strip
 
+gem 'agoo'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'camaleon_cms', '>= 2.5.3.1'
 gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'coffee-rails', '~> 5.0'
+gem 'dotenv-rails', require: 'dotenv/rails-now', groups: %i[development test]
 gem 'draper', '>= 3'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -18,7 +20,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 gem 'mini_racer', platforms: :ruby
 gem 'pg'
-gem 'puma'
 gem 'rails', '~> 6.0'
 gem 'sassc-rails'
 gem 'turbolinks', '~> 5'

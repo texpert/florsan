@@ -85,9 +85,10 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    agoo (2.13.0)
     ast (2.4.1)
     aws-eventstream (1.1.0)
-    aws-partitions (1.386.0)
+    aws-partitions (1.388.0)
     aws-sdk-core (3.109.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -135,6 +136,10 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     draper (4.0.1)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
@@ -191,8 +196,6 @@ GEM
       ast (~> 2.4.1)
     pg (1.2.3)
     public_suffix (4.0.6)
-    puma (5.0.4)
-      nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -313,23 +316,24 @@ GEM
       will_paginate (>= 3.0.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.0)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  agoo
   bootsnap (>= 1.1.0)
   cama_language_editor
   camaleon_cms!
   capybara (>= 2.15, < 4.0)
   coffee-rails (~> 5.0)
+  dotenv-rails
   draper (>= 3)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mini_racer
   pg
-  puma
   rails (~> 6.0)
   rubocop (= 0.90)
   rubocop-performance
