@@ -85,7 +85,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    agoo (2.13.0)
+    agoo (2.14.0)
     ast (2.4.1)
     aws-eventstream (1.1.0)
     aws-partitions (1.388.0)
@@ -322,7 +322,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  agoo
+  agoo (>= 2.14.0)
   bootsnap (>= 1.1.0)
   cama_language_editor
   camaleon_cms!
