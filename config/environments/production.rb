@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/integer/time'
+require_relative '../../app/services/no_compression'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
