@@ -10,7 +10,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'coffee-rails', '~> 5.0'
 gem 'draper', '>= 3'
-gem 'font-awesome-rails', git: 'https://github.com/bokmann/font-awesome-rails'
+gem 'font-awesome-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
