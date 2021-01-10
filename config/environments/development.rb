@@ -32,6 +32,9 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # To let fallback to assets pipeline if a precompiled asset is missed, the check should be disabled
+  config.assets.check_precompiled_asset = false
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
