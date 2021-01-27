@@ -1,26 +1,3 @@
-GIT
-  remote: https://github.com/owen2345/camaleon-cms
-  revision: 547b873390ee1d681d07cbef4953b0675bdde5e2
-  specs:
-    camaleon_cms (2.5.3.1)
-      aws-sdk-s3 (~> 1)
-      bcrypt
-      breadcrumbs_on_rails
-      cama_contact_form (>= 0.0.28)
-      cama_meta_tag
-      cancancan (>= 2.0, < 4)
-      coffee-rails
-      draper (>= 1.3)
-      font-awesome-rails
-      jquery-rails
-      meta-tags (~> 2.0)
-      mini_magick
-      non-digest-assets
-      sass-rails
-      tinymce-rails (< 5)
-      will_paginate
-      will_paginate-bootstrap
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -89,15 +66,15 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    ast (2.4.1)
+    ast (2.4.2)
     aws-eventstream (1.1.0)
-    aws-partitions (1.415.0)
-    aws-sdk-core (3.110.0)
+    aws-partitions (1.419.0)
+    aws-sdk-core (3.111.2)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
       aws-sigv4 (~> 1.1)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.40.0)
+    aws-sdk-kms (1.41.0)
       aws-sdk-core (~> 3, >= 3.109.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.87.0)
@@ -108,7 +85,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
-    bootsnap (1.5.1)
+    bootsnap (1.6.0)
       msgpack (~> 1.0)
     breadcrumbs_on_rails (4.0.0)
       rails (>= 5.0)
@@ -118,14 +95,32 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7)
       rails (>= 4.1.0)
+    camaleon_cms (2.6.0)
+      aws-sdk-s3 (~> 1)
+      bcrypt
+      breadcrumbs_on_rails
+      cama_contact_form (>= 0.0.28)
+      cama_meta_tag
+      cancancan (>= 2.0, < 4)
+      coffee-rails
+      draper (>= 1.3)
+      font-awesome-rails
+      jquery-rails
+      meta-tags (~> 2.0)
+      mini_magick
+      non-digest-assets
+      sass-rails
+      tinymce-rails (< 5)
+      will_paginate
+      will_paginate-bootstrap
     cancancan (3.2.1)
-    capybara (3.34.0)
+    capybara (3.35.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.5)
+      regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.0.0)
     coffee-rails (5.0.0)
@@ -135,7 +130,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     crass (1.0.6)
     draper (4.0.1)
       actionpack (>= 5.0)
@@ -152,7 +147,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.10.1)
+    jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
     jquery-rails (4.4.0)
@@ -161,10 +156,10 @@ GEM
       thor (>= 0.14, < 2.0)
     json (2.5.1)
     libv8 (8.4.255.0)
-    listen (3.4.0)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.8.0)
+    loofah (2.9.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -181,7 +176,7 @@ GEM
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
     minitest (5.14.3)
-    msgpack (1.3.3)
+    msgpack (1.4.1)
     nio4r (2.5.4)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
@@ -234,20 +229,20 @@ GEM
       ffi (~> 1.0)
     recaptcha (5.6.0)
       json
-    regexp_parser (1.8.2)
+    regexp_parser (2.0.3)
     request_store (1.5.0)
       rack (>= 1.4)
     rexml (3.2.4)
-    rubocop (0.90.0)
+    rubocop (1.7.0)
       parallel (~> 1.10)
-      parser (>= 2.7.1.1)
+      parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.7)
+      regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 0.3.0, < 1.0)
+      rubocop-ast (>= 1.2.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.8.0)
+    rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
     rubocop-performance (1.9.2)
       rubocop (>= 0.90.0, < 2.0)
@@ -256,9 +251,9 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 0.90.0, < 2.0)
-    rubocop-rspec (1.44.1)
-      rubocop (~> 0.87)
-      rubocop-ast (>= 0.7.1)
+    rubocop-rspec (2.1.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
     ruby-progressbar (1.11.0)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
@@ -283,7 +278,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    thor (1.0.1)
+    thor (1.1.0)
     tilt (2.0.10)
     tinymce-rails (4.9.11)
       railties (>= 3.1.1)
@@ -300,7 +295,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (4.4.2)
+    webdrivers (4.5.0)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (>= 3.0, < 4.0)
@@ -320,7 +315,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
-  camaleon_cms!
+  camaleon_cms (>= 2.6)
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
   draper (>= 3)
@@ -332,7 +327,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.0)
-  rubocop (= 0.90)
+  rubocop (= 1.7.0)
   rubocop-performance
   rubocop-rails
   rubocop-rspec
