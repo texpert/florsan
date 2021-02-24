@@ -20,8 +20,8 @@
 
 ## TODO: remove public read access
 
-AWS bucket policy is `public read` until 
-[the issue in Camaleon CMS will get solved](https://github.com/owen2345/camaleon-cms/issues/955)
+AWS bucket policy is `public read` until [the issue in Camaleon CMS will get solved](https://github.
+com/owen2345/camaleon-cms/issues/955)
 
 Current bucket policy:
 
