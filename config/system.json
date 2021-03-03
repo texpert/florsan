@@ -9,7 +9,14 @@
   "auto_include_migrations": false,
   "helpers": ["ApplicationHelper"],
   "hooks": {
+    "on_render_sitemap": ["on_render_sitemap"],
     "on_uploader": ["adjust_aws_settings"],
     "uploader_aws_before_upload": ["content_type_only_for_svg"]
-  }
+  },
+  "author": "Aurel Branzeanu",
+  "description": "DB adjustments, roles, languages, paths, helpers, hooks and other system settings",
+  "minimumCoreVersion": "Ruby 2.6, Rails 6.1",
+  "name": "FlorSan",
+  "title": "System Config",
+  "version": "0.2.1"
 }

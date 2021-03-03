@@ -14,5 +14,9 @@ module ApplicationHelper
   def content_type_only_for_svg(args)
     @suppress_content_type = true unless args[:key].match?(/\.svgz?\z/)
   end
+
+  def on_render_sitemap(_options)
+    lookup_context.formats = [:html] if params[:format] == 'txt'
+  end
   # rubocop:enable Rails/HelperInstanceVariable
 end
