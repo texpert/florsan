@@ -41,7 +41,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen', '~> 3.3'
+  gem 'listen', '~> 3.5'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'rubocop', '1.11.0', require: false
   gem 'rubocop-performance'
