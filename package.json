@@ -1,6 +1,10 @@
 {
   "name": "florsan",
   "private": true,
+  "engines": {
+    "node": "15.x",
+    "yarn": "1.x"
+  },
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.10.0",
