@@ -156,6 +156,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (2.5.1)
     libv8-node (15.14.0.0)
+    libv8-node (15.14.0.0-x86_64-darwin-19)
     libv8-node (15.14.0.0-x86_64-linux)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -179,6 +180,8 @@ GEM
     nio4r (2.5.7)
     nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
+      racc (~> 1.4)
+    nokogiri (1.11.3-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
@@ -314,6 +317,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin
   x86_64-linux
 
 DEPENDENCIES
