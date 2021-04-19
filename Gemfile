@@ -17,7 +17,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'mini_racer', '0.3.1'
+gem 'mini_racer'
 gem 'pg'
 gem 'puma', '~> 5.2'
 gem 'rails', '~> 6.1'
