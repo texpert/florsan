@@ -93,7 +93,7 @@ GEM
     cama_contact_form (0.0.30)
       rails
       recaptcha (>= 5.0)
-    cama_meta_tag (1.7)
+    cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
     camaleon_cms (2.6.0)
       aws-sdk-s3 (~> 1)
