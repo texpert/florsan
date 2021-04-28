@@ -1,11 +1,31 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
 version: 2
 updates:
-  - package-ecosystem: "bundler" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "03:00"
+  open-pull-requests-limit: 10
+  allow:
+  - dependency-type: direct
+  - dependency-type: indirect
+  ignore:
+  - dependency-name: aws-partitions
+    versions:
+    - 1.437.0
+    - 1.440.0
+    - 1.444.0
+    - 1.445.0
+    - 1.447.0
+  - dependency-name: mini_racer
+    versions:
+    - 0.4.0
+  - dependency-name: mimemagic
+    versions:
+    - 0.3.10
+  - dependency-name: aws-sdk-kms
+    versions:
+    - 1.43.0
+  - dependency-name: rubocop
+    versions:
+    - 1.10.0
