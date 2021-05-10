@@ -159,6 +159,7 @@ GEM
     libv8-node (15.14.0.1-x86_64-darwin-17)
     libv8-node (15.14.0.1-x86_64-darwin-18)
     libv8-node (15.14.0.1-x86_64-darwin-19)
+    libv8-node (15.14.0.1-x86_64-darwin-20)
     libv8-node (15.14.0.1-x86_64-linux)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -234,7 +235,7 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    recaptcha (5.7.0)
+    recaptcha (5.8.0)
       json
     regexp_parser (2.1.1)
     request_store (1.5.0)
