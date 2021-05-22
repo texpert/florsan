@@ -41,6 +41,10 @@ group :development, :test do
 end
 
 group :development do
+  # TODO: Change to the official'benchmark-ips' when the following PR will be merged:
+  # https://github.com/evanphx/benchmark-ips/pull/115
+  gem 'benchmark-ips', git: 'https://github.com/okeeblow/benchmark-ips/', branch: 'patch-1'
+  gem 'derailed_benchmarks'
   gem 'listen', '~> 3.5'
   gem 'rack-mini-profiler', '~> 2.3'
   gem 'rubocop', '1.15.0', require: false
@@ -50,6 +54,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'stackprof'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
 end
