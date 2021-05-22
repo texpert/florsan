@@ -82,3 +82,40 @@ Current bucket policy:
     ]
 }
 ```
+
+## Testing and profiling
+
+The `derailed_benchmarks` gem is running performance test in `production` environment, so the `production` DB in the `config/database.yml` is pointing to the development DB.
+
+The following specs could be run:
+
+### Static memory reports:
+
+```bash
+bundle exec derailed bundle:mem # Memory used at Require time
+
+bundle exec derailed bundle:mem development # Memory used at Require time in `development` environment
+
+bundle exec derailed bundle:objects # Objects created at Require time
+
+bundle exec derailed bundle:objects development # Objects created at Require time in `development` environment
+
+```
+
+### Dynamic profiling
+
+```bash
+$ bundle exec derailed exec --help
+  $ derailed exec perf:allocated_objects  # outputs allocated object diff after app is called TEST_COUNT times
+  $ derailed exec perf:app  # runs the performance test against two most recent commits of the current app
+  $ derailed exec perf:gc  # outputs GC::Profiler.report data while app is called TEST_COUNT times
+  $ derailed exec perf:heap  # heap analyzer
+  $ derailed exec perf:ips  # iterations per second
+  $ derailed exec perf:library  # runs the same test against two different branches for statistical comparison
+  $ derailed exec perf:mem  # show memory usage caused by invoking require per gem
+  $ derailed exec perf:mem_over_time  # outputs memory usage over time
+  $ derailed exec perf:objects  # profiles ruby allocation
+  $ derailed exec perf:stackprof  # stackprof
+  $ derailed exec perf:test  # hits the url TEST_COUNT times
+  $ derailed exec perf:heap_diff  # three heaps generation for comparison
+```

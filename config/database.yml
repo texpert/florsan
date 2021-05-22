@@ -24,8 +24,8 @@ test: &test
 production:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
+  database: <%= ENV['RDS_DB_NAME'] || 'florsan_development' %>
+  username: <%= ENV['RDS_USERNAME'] || 'florsan_dev' %>
+  password: <%= ENV['RDS_PASSWORD'] || 'florsan_pass' %>
+  host: <%= ENV['RDS_HOSTNAME'] || '127.0.0.1' %>
+  port: <%= ENV['RDS_PORT'] || '5432' %>
