@@ -5,6 +5,28 @@ GIT
   specs:
     benchmark-ips (2.9.0)
 
+PATH
+  remote: /Users/thunder/dev/ruby/camaleon-cms
+  specs:
+    camaleon_cms (2.6.0)
+      aws-sdk-s3 (~> 1)
+      bcrypt
+      breadcrumbs_on_rails
+      cama_contact_form (>= 0.0.28)
+      cama_meta_tag
+      cancancan (>= 2.0, < 4)
+      coffee-rails
+      draper (>= 1.3)
+      font-awesome-rails
+      jquery-rails
+      meta-tags (~> 2.0)
+      mini_magick
+      non-digest-assets
+      sass-rails
+      tinymce-rails (< 5)
+      will_paginate
+      will_paginate-bootstrap
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -102,24 +124,6 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.6.0)
-      aws-sdk-s3 (~> 1)
-      bcrypt
-      breadcrumbs_on_rails
-      cama_contact_form (>= 0.0.28)
-      cama_meta_tag
-      cancancan (>= 2.0, < 4)
-      coffee-rails
-      draper (>= 1.3)
-      font-awesome-rails
-      jquery-rails
-      meta-tags (~> 2.0)
-      mini_magick
-      non-digest-assets
-      sass-rails
-      tinymce-rails (< 5)
-      will_paginate
-      will_paginate-bootstrap
     cancancan (3.2.1)
     capybara (3.35.3)
       addressable
@@ -355,7 +359,7 @@ PLATFORMS
 DEPENDENCIES
   benchmark-ips!
   bootsnap (>= 1.4.4)
-  camaleon_cms (>= 2.6)
+  camaleon_cms!
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
   derailed_benchmarks
