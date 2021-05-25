@@ -41,9 +41,7 @@ group :development, :test do
 end
 
 group :development do
-  # TODO: Change to the official'benchmark-ips' when the following PR will be merged:
-  # https://github.com/evanphx/benchmark-ips/pull/115
-  gem 'benchmark-ips', git: 'https://github.com/okeeblow/benchmark-ips/', branch: 'patch-1'
+  gem 'benchmark-ips', '>= 2.9.1'
   gem 'derailed_benchmarks'
   gem 'listen', '~> 3.5'
   gem 'rack-mini-profiler', '~> 2.3'
