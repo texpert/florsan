@@ -262,7 +262,7 @@ GEM
     request_store (1.5.0)
       rack (>= 1.4)
     rexml (3.2.5)
-    rubocop (1.18.1)
+    rubocop (1.18.2)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -362,7 +362,7 @@ DEPENDENCIES
   puma (~> 5.3)
   rack-mini-profiler (~> 2.3)
   rails (~> 6.1)
-  rubocop (= 1.18.1)
+  rubocop (= 1.18.2)
   rubocop-performance
   rubocop-rails
   rubocop-rspec
