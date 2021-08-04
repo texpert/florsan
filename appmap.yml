@@ -1,0 +1,15 @@
+# 'name' should be the same as the code repo name.
+name: rails_6_rss_reader
+packages:
+  - path: app/apps
+  - path: app/assets
+  - path: app/controllers
+  - path: app/helpers
+  - path: app/jobs
+  - path: app/mailers
+  - path: app/models
+  - path: app/services
+  - path: app/views
+# Include the gems that you want to see in the dependency maps.
+# This is just an example.
+#- gem: cancancan

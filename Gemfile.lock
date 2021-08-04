@@ -66,6 +66,11 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    appmap (0.62.0)
+      activesupport
+      method_source
+      rack
+      reverse_markdown
     ast (2.4.2)
     aws-eventstream (1.1.1)
     aws-partitions (1.482.0)
@@ -261,6 +266,8 @@ GEM
     regexp_parser (2.1.1)
     request_store (1.5.0)
       rack (>= 1.4)
+    reverse_markdown (2.0.0)
+      nokogiri
     rexml (3.2.5)
     rubocop (1.18.4)
       parallel (~> 1.10)
@@ -347,6 +354,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  appmap
   benchmark-ips (>= 2.9.1)
   bootsnap (>= 1.4.4)
   camaleon_cms (>= 2.6)
