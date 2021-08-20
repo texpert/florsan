@@ -185,7 +185,7 @@ GEM
     libv8-node (15.14.0.1-x86_64-darwin-19)
     libv8-node (15.14.0.1-x86_64-darwin-20)
     libv8-node (15.14.0.1-x86_64-linux)
-    listen (3.6.0)
+    listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.12.0)
@@ -364,7 +364,7 @@ DEPENDENCIES
   draper (>= 3)
   font-awesome-rails
   jbuilder (~> 2.5)
-  listen (~> 3.6)
+  listen (~> 3.7)
   mini_racer
   pg
   puma (~> 5.4)

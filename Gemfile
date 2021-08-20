@@ -44,7 +44,7 @@ end
 group :development do
   gem 'benchmark-ips', '>= 2.9.1'
   gem 'derailed_benchmarks'
-  gem 'listen', '~> 3.6'
+  gem 'listen', '~> 3.7'
   gem 'rack-mini-profiler', '~> 2.3'
   gem 'rubocop', '1.19.1', require: false
   gem 'rubocop-performance'
