@@ -46,7 +46,7 @@ group :development do
   gem 'derailed_benchmarks'
   gem 'listen', '~> 3.6'
   gem 'rack-mini-profiler', '~> 2.3'
-  gem 'rubocop', '1.19.0', require: false
+  gem 'rubocop', '1.19.1', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
