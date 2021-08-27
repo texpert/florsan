@@ -91,7 +91,7 @@ GEM
     bcrypt (3.1.16)
     benchmark-ips (2.9.1)
     bindex (0.8.1)
-    bootsnap (1.8.0)
+    bootsnap (1.8.1)
       msgpack (~> 1.0)
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
@@ -356,7 +356,7 @@ PLATFORMS
 DEPENDENCIES
   appmap
   benchmark-ips (>= 2.9.1)
-  bootsnap (>= 1.4.4)
+  bootsnap (>= 1.8.1)
   camaleon_cms (>= 2.6)
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
