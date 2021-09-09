@@ -46,10 +46,11 @@ group :development do
   gem 'derailed_benchmarks'
   gem 'listen', '~> 3.7'
   gem 'rack-mini-profiler', '~> 2.3'
-  gem 'rubocop', '1.20.0', require: false
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rspec'
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rake', require: false
+  gem 'rubocop-rspec', require: false
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
   gem 'spring'
@@ -61,7 +62,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver', '>= 4.0.0.alpha6'
+  gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'webdrivers'
 end
