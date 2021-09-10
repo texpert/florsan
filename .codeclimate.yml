@@ -31,6 +31,6 @@ plugins:
         - BUG
         - CUSTOM
   markdownlint:
-    enabled: true
+    enabled: false
   stylelint:
     enabled: true
