@@ -9,7 +9,7 @@ exclude_patterns:
 plugins:
   rubocop:
     enabled: true
-    channel: 'rubocop-1-10-0'
+    channel: 'rubocop-1-18-3'
   brakeman:
     enabled: true
   bundler-audit:
@@ -31,6 +31,6 @@ plugins:
         - BUG
         - CUSTOM
   markdownlint:
-    enabled: true
+    enabled: false
   stylelint:
     enabled: true
