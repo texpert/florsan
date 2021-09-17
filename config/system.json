@@ -15,7 +15,7 @@
   },
   "author": "Aurel Branzeanu",
   "description": "DB adjustments, roles, languages, paths, helpers, hooks and other system settings",
-  "minimumCoreVersion": "Ruby 2.6, Rails 6.1",
+  "minimumCoreVersion": "Ruby 2.7, Rails 6.1",
   "name": "FlorSan",
   "title": "System Config",
   "version": "0.2.1"

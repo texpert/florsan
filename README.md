@@ -2,9 +2,9 @@
 
 # README
 
-* Ruby version: 2.7.2
+* Ruby version: 2.7.4
 
-* Rails version: 6.1.3.1
+* Rails version: 6.1.4.1
 
 * System dependencies
 
