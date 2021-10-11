@@ -138,7 +138,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    dead_end (1.1.7)
+    dead_end (1.2.0)
     derailed_benchmarks (2.1.1)
       benchmark-ips (~> 2)
       dead_end
