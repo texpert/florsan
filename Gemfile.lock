@@ -73,7 +73,7 @@ GEM
       reverse_markdown
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.513.0)
+    aws-partitions (1.515.0)
     aws-sdk-core (3.121.1)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.239.0)
@@ -101,7 +101,7 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.6.0)
+    camaleon_cms (2.6.0.1)
       aws-sdk-s3 (~> 1)
       bcrypt
       breadcrumbs_on_rails
@@ -114,7 +114,7 @@ GEM
       jquery-rails
       meta-tags (~> 2.0)
       mini_magick
-      non-digest-assets
+      non-digest-assets (~> 2.0)
       sass-rails
       tinymce-rails (< 5)
       will_paginate
