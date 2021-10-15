@@ -306,9 +306,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium-webdriver (4.0.0.rc3)
+    selenium-webdriver (4.0.0)
       childprocess (>= 0.5, < 5.0)
-      rexml (~> 3.2)
+      rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     spring (3.0.0)
     sprockets (4.0.2)
@@ -379,7 +379,7 @@ DEPENDENCIES
   rubocop-rake
   rubocop-rspec
   sassc-rails
-  selenium-webdriver (>= 4.0.0.rc1)
+  selenium-webdriver
   spring
   stackprof
   turbolinks (~> 5)
