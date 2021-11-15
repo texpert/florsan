@@ -172,7 +172,7 @@ GEM
       thor
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.11.2)
+    jbuilder (2.11.3)
       activesupport (>= 5.0.0)
     jmespath (1.4.0)
     jquery-rails (4.4.0)
@@ -364,7 +364,7 @@ DEPENDENCIES
   derailed_benchmarks
   draper (>= 3)
   font-awesome-rails
-  jbuilder (~> 2.5)
+  jbuilder (~> 2.11)
   listen (~> 3.7)
   localhost
   mini_racer

@@ -13,7 +13,7 @@ gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.11'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
