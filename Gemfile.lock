@@ -166,7 +166,7 @@ GEM
       railties (>= 3.2, < 7)
     get_process_mem (0.2.7)
       ffi (~> 1.0)
-    globalid (0.5.2)
+    globalid (0.6.0)
       activesupport (>= 5.0)
     heapy (0.2.0)
       thor
