@@ -155,7 +155,7 @@ GEM
       rake (> 10, < 14)
       ruby-statistics (>= 2.1)
       thor (>= 0.19, < 2)
-    digest (3.0.0)
+    digest (3.1.0)
     draper (4.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
