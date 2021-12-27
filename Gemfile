@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.11'
 gem 'mini_racer'
 gem 'pg'
 gem 'puma', '~> 5.5'
-gem 'rails', '~> 6.1'
+gem 'rails', '~> 7.0'
 gem 'sassc-rails'
 gem 'turbolinks', '~> 5'
 
