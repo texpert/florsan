@@ -4,7 +4,7 @@
 
 * Ruby version: 2.7.5
 
-* Rails version: 6.1.4.1
+* Rails version: 7.0.1
 
 * System dependencies
 
