@@ -72,7 +72,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    appmap (0.71.0)
+    appmap (0.72.0)
       activesupport
       method_source
       rack
