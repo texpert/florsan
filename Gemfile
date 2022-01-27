@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.11'
 gem 'mini_racer'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
 gem 'pg'
-gem 'puma', '~> 5.5'
+gem 'puma', '~> 5.6'
 gem 'rails', '~> 7.0'
 gem 'sassc-rails'
 gem 'sprockets-rails'
