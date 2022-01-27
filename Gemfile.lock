@@ -95,7 +95,7 @@ GEM
     aws-sigv4 (1.4.0)
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.16)
-    benchmark-ips (2.9.2)
+    benchmark-ips (2.9.3)
     bindex (0.8.1)
     bootsnap (1.10.2)
       msgpack (~> 1.2)
