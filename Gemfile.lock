@@ -282,7 +282,7 @@ GEM
     rake (13.0.6)
     recaptcha (5.8.1)
       json
-    regexp_parser (2.2.0)
+    regexp_parser (2.2.1)
     request_store (1.5.1)
       rack (>= 1.4)
     rexml (3.2.5)
