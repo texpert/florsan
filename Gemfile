@@ -46,7 +46,7 @@ group :development do
   gem 'benchmark-ips', '>= 2.9.1'
   gem 'derailed_benchmarks'
   gem 'localhost', require: 'localhost/authority'
-  gem 'rack-mini-profiler', '~> 2.3'
+  gem 'rack-mini-profiler', '~> 3.0'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
