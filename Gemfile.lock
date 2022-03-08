@@ -280,7 +280,7 @@ GEM
       zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.0.6)
-    recaptcha (5.8.1)
+    recaptcha (5.9.0)
       json
     regexp_parser (2.2.1)
     request_store (1.5.1)
