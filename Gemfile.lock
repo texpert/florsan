@@ -1,3 +1,30 @@
+GIT
+  remote: https://github.com/texpert/camaleon-cms
+  revision: 47fbb9a949ba5d47c0ac703f13b0ce91e8ed99f2
+  branch: move-glyphicons-to-assets-fonts
+  specs:
+    camaleon_cms (2.6.2)
+      aws-sdk-s3 (~> 1)
+      bcrypt
+      breadcrumbs_on_rails
+      cama_contact_form (>= 0.0.28)
+      cama_meta_tag
+      cancancan (>= 2.0, < 4)
+      coffee-rails
+      draper (>= 4.0.2)
+      font-awesome-rails
+      jquery-rails
+      meta-tags (~> 2.0)
+      mini_magick
+      net-imap
+      net-pop
+      net-smtp
+      non-digest-assets (~> 2.0)
+      sass-rails
+      tinymce-rails (< 5)
+      will_paginate
+      will_paginate-bootstrap
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -75,7 +102,7 @@ GEM
     ast (2.4.2)
     aws-eventstream (1.2.0)
     aws-partitions (1.566.0)
-    aws-sdk-core (3.129.1)
+    aws-sdk-core (3.130.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.525.0)
       aws-sigv4 (~> 1.1)
@@ -102,27 +129,6 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.6.2)
-      aws-sdk-s3 (~> 1)
-      bcrypt
-      breadcrumbs_on_rails
-      cama_contact_form (>= 0.0.28)
-      cama_meta_tag
-      cancancan (>= 2.0, < 4)
-      coffee-rails
-      draper (>= 4.0.2)
-      font-awesome-rails
-      jquery-rails
-      meta-tags (~> 2.0)
-      mini_magick
-      net-imap
-      net-pop
-      net-smtp
-      non-digest-assets (~> 2.0)
-      sass-rails
-      tinymce-rails (< 5)
-      will_paginate
-      will_paginate-bootstrap
     cancancan (3.3.0)
     capybara (3.36.0)
       addressable
@@ -376,7 +382,7 @@ PLATFORMS
 DEPENDENCIES
   benchmark-ips (>= 2.9.1)
   bootsnap (>= 1.8.1)
-  camaleon_cms (>= 2.6)
+  camaleon_cms!
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
   derailed_benchmarks
