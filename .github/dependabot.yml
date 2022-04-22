@@ -7,25 +7,4 @@ updates:
     time: "03:00"
   open-pull-requests-limit: 10
   allow:
-  - dependency-type: direct
-  - dependency-type: indirect
-  ignore:
-  - dependency-name: aws-partitions
-    versions:
-    - 1.437.0
-    - 1.440.0
-    - 1.444.0
-    - 1.445.0
-    - 1.447.0
-  - dependency-name: mini_racer
-    versions:
-    - 0.4.0
-  - dependency-name: mimemagic
-    versions:
-    - 0.3.10
-  - dependency-name: aws-sdk-kms
-    versions:
-    - 1.43.0
-  - dependency-name: rubocop
-    versions:
-    - 1.10.0
+  - dependency-type: all
