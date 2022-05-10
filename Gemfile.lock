@@ -209,8 +209,7 @@ GEM
       libv8-node (~> 16.10.0.0)
     minitest (5.15.0)
     msgpack (1.5.1)
-    net-http (0.2.0)
-      net-protocol
+    net-http (0.2.2)
       uri
     net-imap (0.2.3)
       digest
