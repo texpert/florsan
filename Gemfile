@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.11'
 # gem 'mini_magick', '~> 4.8'
 gem 'mini_racer'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
+gem 'oj'
 gem 'pg'
 gem 'puma', '~> 5.6'
 gem 'rails', '~> 7.0'
