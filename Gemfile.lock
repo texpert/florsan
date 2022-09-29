@@ -211,10 +211,8 @@ GEM
     msgpack (1.5.6)
     net-http (0.2.2)
       uri
-    net-imap (0.2.3)
-      digest
+    net-imap (0.3.0)
       net-protocol
-      strscan
     net-pop (0.1.1)
       digest
       net-protocol
@@ -332,7 +330,6 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     stackprof (0.2.21)
-    strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.0)
