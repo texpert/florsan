@@ -23,7 +23,6 @@ pidfile ENV.fetch('PIDFILE', 'tmp/pids/server.pid')
 if workers_count > 1
   workers workers_count
   prune_bundler
-  wait_for_less_busy_worker
   fork_worker
 end
 
