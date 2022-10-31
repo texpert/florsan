@@ -301,7 +301,7 @@ GEM
     rubocop-rspec (2.14.2)
       rubocop (~> 1.33)
     ruby-progressbar (1.11.0)
-    ruby-statistics (3.0.0)
+    ruby-statistics (3.0.1)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
