@@ -124,7 +124,7 @@ GEM
       will_paginate
       will_paginate-bootstrap
     cancancan (3.4.0)
-    capybara (3.37.1)
+    capybara (3.38.0)
       addressable
       matrix
       mini_mime (>= 0.1.3)
