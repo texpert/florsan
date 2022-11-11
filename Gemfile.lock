@@ -143,6 +143,8 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    dartsass-rails (0.4.0)
+      railties (>= 6.0.0)
     dead_end (4.0.0)
     derailed_benchmarks (2.1.2)
       benchmark-ips (~> 2)
@@ -372,6 +374,7 @@ DEPENDENCIES
   camaleon_cms (>= 2.6)
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
+  dartsass-rails (~> 0.4.0)
   derailed_benchmarks
   draper (>= 3)
   font-awesome-rails
@@ -389,7 +392,6 @@ DEPENDENCIES
   rubocop-rails
   rubocop-rake
   rubocop-rspec
-  sassc-rails
   selenium-webdriver
   sprockets-rails
   stackprof
