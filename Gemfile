@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.8.1', require: false
 gem 'camaleon_cms', '>= 2.6'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'coffee-rails', '~> 5.0'
+gem 'dartsass-rails', '~> 0.4.0'
 gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 
@@ -23,7 +24,6 @@ gem 'oj'
 gem 'pg'
 gem 'puma', '~> 6.0'
 gem 'rails', '~> 7.0'
-gem 'sassc-rails'
 gem 'sprockets-rails'
 gem 'turbolinks', '~> 5'
 
