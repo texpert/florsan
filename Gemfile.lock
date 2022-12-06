@@ -212,7 +212,7 @@ GEM
       libv8-node (~> 16.10.0.0)
     minitest (5.16.3)
     msgpack (1.6.0)
-    net-http (0.3.0)
+    net-http (0.3.1)
       uri
     net-imap (0.3.1)
       net-protocol
@@ -343,7 +343,7 @@ GEM
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (2.3.0)
-    uri (0.11.0)
+    uri (0.12.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
