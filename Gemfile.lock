@@ -142,7 +142,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    dartsass-rails (0.4.0)
+    dartsass-rails (0.4.1)
       railties (>= 6.0.0)
     date (3.3.3)
     dead_end (4.0.0)
@@ -377,7 +377,7 @@ DEPENDENCIES
   camaleon_cms (>= 2.6)
   capybara (>= 3.26)
   coffee-rails (~> 5.0)
-  dartsass-rails (~> 0.4.0)
+  dartsass-rails (~> 0.4.1)
   derailed_benchmarks
   draper (>= 3)
   font-awesome-rails
