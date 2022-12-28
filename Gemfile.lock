@@ -97,7 +97,7 @@ GEM
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
     builder (3.2.4)
-    cama_contact_form (0.0.30)
+    cama_contact_form (0.1.0)
       rails
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
