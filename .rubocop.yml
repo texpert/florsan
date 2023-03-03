@@ -2,6 +2,7 @@
 # in separate files. This file adds all other parameters apart from Enabled.
 
 require:
+  - rubocop-capybara
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
