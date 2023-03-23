@@ -74,8 +74,8 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.732.0)
-    aws-sdk-core (3.170.1)
+    aws-partitions (1.733.0)
+    aws-sdk-core (3.171.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
@@ -83,7 +83,7 @@ GEM
     aws-sdk-kms (1.63.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.119.1)
+    aws-sdk-s3 (1.119.2)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.4)
@@ -97,27 +97,23 @@ GEM
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
     builder (3.2.4)
-    cama_contact_form (0.0.30)
+    cama_contact_form (0.1.0)
       rails
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.6.4)
+    camaleon_cms (2.7.1)
       aws-sdk-s3 (~> 1)
       bcrypt
       breadcrumbs_on_rails
-      cama_contact_form (>= 0.0.28)
+      cama_contact_form (~> 0.1.0)
       cama_meta_tag
       cancancan (>= 2.0, < 4)
-      coffee-rails
       draper (>= 4.0.2)
       font-awesome-rails
       jquery-rails
       meta-tags (~> 2.0)
       mini_magick
-      net-imap
-      net-pop
-      net-smtp
       non-digest-assets (~> 2.0)
       sass-rails
       tinymce-rails (< 5)
