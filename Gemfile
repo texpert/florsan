@@ -6,14 +6,11 @@ ruby File.read('.ruby-version').strip
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.8.1', require: false
-gem 'camaleon_cms', '>= 2.6'
+gem 'camaleon_cms', '>= 2.7.2'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-rails', '~> 0.4.1'
 gem 'draper', '>= 3'
 gem 'font-awesome-rails'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.11'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
