@@ -6,6 +6,8 @@
 
 * Rails version: 7.0.4.3
 
+* Node JS version: 16.20.0
+
 * System dependencies
 
 * Configuration
