@@ -6,7 +6,7 @@ ruby File.read('.ruby-version').strip
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.8.1', require: false
-gem 'camaleon_cms', '>= 2.7.2'
+gem 'camaleon_cms', '>= 2.7.3'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-rails', '~> 0.4.1'
 gem 'draper', '>= 3'
