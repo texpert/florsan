@@ -223,8 +223,9 @@ GEM
       sprockets (>= 2.0, < 5.0)
     oj (3.15.0)
     parallel (1.23.0)
-    parser (3.2.2.1)
+    parser (3.2.2.3)
       ast (~> 2.4.1)
+      racc
     pg (1.5.3)
     public_suffix (5.0.1)
     puma (6.3.0)
