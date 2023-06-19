@@ -197,7 +197,7 @@ GEM
     mini_portile2 (2.8.2)
     mini_racer (0.6.4)
       libv8-node (~> 16.19.0.0)
-    minitest (5.18.0)
+    minitest (5.18.1)
     msgpack (1.7.1)
     net-http (0.3.2)
       uri
@@ -289,7 +289,7 @@ GEM
     rubocop-performance (1.18.0)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
-    rubocop-rails (2.19.1)
+    rubocop-rails (2.20.0)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
