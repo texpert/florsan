@@ -197,7 +197,7 @@ GEM
     mini_portile2 (2.8.2)
     mini_racer (0.6.4)
       libv8-node (~> 16.19.0.0)
-    minitest (5.18.0)
+    minitest (5.18.1)
     msgpack (1.7.1)
     net-http (0.3.2)
       uri
