@@ -8,7 +8,7 @@ ruby File.read('.ruby-version').strip
 gem 'bootsnap', '>= 1.8.1', require: false
 gem 'camaleon_cms', '>= 2.7.3'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
-gem 'dartsass-rails', '~> 0.4.1'
+gem 'dartsass-rails', '~> 0.5.0'
 gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 
