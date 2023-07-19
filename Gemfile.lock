@@ -203,7 +203,7 @@ GEM
     mini_racer (0.8.0)
       libv8-node (~> 18.16.0.0)
     minitest (5.18.1)
-    msgpack (1.7.1)
+    msgpack (1.7.2)
     net-http (0.3.2)
       uri
     net-imap (0.3.6)
