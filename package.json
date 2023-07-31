@@ -7,7 +7,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0"
   }
