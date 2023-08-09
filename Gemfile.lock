@@ -164,9 +164,9 @@ GEM
       ffi (~> 1.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
-    google-protobuf (3.23.4)
-    google-protobuf (3.23.4-x86_64-darwin)
-    google-protobuf (3.23.4-x86_64-linux)
+    google-protobuf (3.24.0)
+    google-protobuf (3.24.0-x86_64-darwin)
+    google-protobuf (3.24.0-x86_64-linux)
     heapy (0.2.0)
       thor
     i18n (1.14.1)
