@@ -227,7 +227,7 @@ GEM
     non-digest-assets (2.2.0)
       activesupport (>= 5.2, < 7.1)
       sprockets (>= 2.0, < 5.0)
-    oj (3.15.1)
+    oj (3.16.0)
     parallel (1.23.0)
     parser (3.2.2.3)
       ast (~> 2.4.1)
