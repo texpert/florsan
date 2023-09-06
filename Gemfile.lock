@@ -163,7 +163,7 @@ GEM
       railties (>= 3.2, < 8.0)
     get_process_mem (0.2.7)
       ffi (~> 1.0)
-    globalid (1.2.0)
+    globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (3.24.2)
     google-protobuf (3.24.2-x86_64-darwin)
