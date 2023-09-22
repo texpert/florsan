@@ -18,7 +18,7 @@ gem 'mini_racer'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
 gem 'oj'
 gem 'pg'
-gem 'puma', '~> 6.3'
+gem 'puma', '~> 6.4'
 gem 'rails', '~> 7.0'
 gem 'sprockets-rails'
 gem 'turbolinks', '~> 5'
