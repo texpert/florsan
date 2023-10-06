@@ -19,7 +19,7 @@ gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already
 gem 'oj'
 gem 'pg'
 gem 'puma', '~> 6.4'
-gem 'rails', '~> 7.0'
+gem 'rails', '~> 7.1'
 gem 'sprockets-rails'
 gem 'turbolinks', '~> 5'
 
