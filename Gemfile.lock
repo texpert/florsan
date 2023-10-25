@@ -298,7 +298,7 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
-    recaptcha (5.15.0)
+    recaptcha (5.16.0)
     regexp_parser (2.8.2)
     reline (0.3.9)
       io-console (~> 0.5)
