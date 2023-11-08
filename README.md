@@ -124,6 +124,12 @@ $ bundle exec derailed exec --help
 
 ### ESLint
 
+Run the following command:
+
+```bash
+yarn eslint --ext .js
+```
+
 ### Stylelint
 
 Run the following command:
