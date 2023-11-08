@@ -6,7 +6,7 @@
 
 * Rails version: 7.1.1
 
-* Node JS version: 16.20.2
+* Node JS version: 20.9.0
 
 * System dependencies
 
@@ -120,4 +120,14 @@ $ bundle exec derailed exec --help
   $ derailed exec perf:stackprof  # stackprof
   $ derailed exec perf:test  # hits the url TEST_COUNT times
   $ derailed exec perf:heap_diff  # three heaps generation for comparison
+```
+
+### ESLint
+
+### Stylelint
+
+Run the following command:
+
+```bash
+yarn stylelint "**/*.{css,js,scss}"
 ```
