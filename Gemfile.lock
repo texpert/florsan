@@ -145,7 +145,7 @@ GEM
     dartsass-rails (0.5.0)
       railties (>= 6.0.0)
       sass-embedded (~> 1.63)
-    date (3.3.3)
+    date (3.3.4)
     dead_end (4.0.0)
     derailed_benchmarks (2.1.2)
       benchmark-ips (~> 2)
