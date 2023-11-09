@@ -15,14 +15,7 @@ plugins:
   bundler-audit:
     enabled: true
   eslint:
-    enabled: true
-    channel: 'eslint-8'
-    config:
-      extensions:
-        - .es6
-        - .js
-        - .jsx
-        - .mjs
+    enabled: false
   fixme:
     enabled: true
     config:
@@ -33,4 +26,4 @@ plugins:
   markdownlint:
     enabled: false
   stylelint:
-    enabled: true
+    enabled: false

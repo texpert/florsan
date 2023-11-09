@@ -1,11 +1,11 @@
 <% comments.each do |comment| user = comment.comment_user.decorate %>
     <div class="comment-body <%= "answer" if children.present? %>">
-        <div class="image <%= "image_children" if children.present? %>">
+        <div class="image <%= "image-children" if children.present? %>">
             <div class="thumbnail">
                 <%= image_tag user.the_avatar, class: "img-responsive avatar"%>
             </div>
         </div>
-        <div class="comment-content text <%= "text_children" if children.present? %>">
+        <div class="comment-content text <%= "text-children" if children.present? %>">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <strong class="<%= (children.present?)? "pull-right" : "" %>"><%= user.the_name %></strong> <small class="text-muted <%= (children.present?)? "" : "pull-right" %>"><%= comment.decorate.the_created_at %></small>

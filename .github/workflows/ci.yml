@@ -1,0 +1,38 @@
+name: "test-on-pr"
+on: [pull_request]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  eslint:
+    if: |
+      !contains(github.event.pull_request.title, '[skip ci]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
+      - name: install app dependencies
+        run: yarn install --frozen-lockfile
+      - name: ESLint
+        run: yarn eslint --ext .js
+
+  stylelint:
+    if: |
+      !contains(github.event.pull_request.title, '[skip ci]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
+      - name: install app dependencies
+        run: yarn install --frozen-lockfile
+      - name: Stylelint
+        run: yarn stylelint "**/*.{css,js,scss}" -f github
