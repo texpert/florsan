@@ -15,11 +15,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: 'yarn'
       - name: install app dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: ESLint
-        run: npm run eslint
+        run: yarn eslint --ext .js
 
   stylelint:
     if: |
@@ -31,8 +31,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
+          cache: 'yarn'
       - name: install app dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Stylelint
-        run: npm run stylelint -- -f github
+        run: yarn stylelint "**/*.{css,js,scss}" -f github
