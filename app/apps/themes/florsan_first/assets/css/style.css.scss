@@ -14,6 +14,8 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@use "sass:string";
+
 * {
   box-sizing: border-box;
 }
@@ -47,7 +49,7 @@ audio:not([controls]) {
 }
 
 html {
-  font-size: unquote('clamp(16px, 16px + (20 - 16) * (100vw - 320px)/(2880 - 320), 20px)');
+  font-size: string.unquote('clamp(16px, 16px + (20 - 16) * (100vw - 320px)/(2880 - 320), 20px)');
   overflow-y: scroll;
 }
 
