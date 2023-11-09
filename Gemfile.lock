@@ -142,9 +142,14 @@ GEM
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
-    dartsass-rails (0.5.0)
-      railties (>= 6.0.0)
-      sass-embedded (~> 1.63)
+    dartsass-ruby (3.0.2)
+      sass-embedded (~> 1.54, < 1.67)
+    dartsass-sprockets (3.0.0)
+      dartsass-ruby (~> 3.0)
+      railties (>= 4.0.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     date (3.3.4)
     dead_end (4.0.0)
     derailed_benchmarks (2.1.2)
@@ -339,12 +344,12 @@ GEM
     ruby-statistics (3.0.2)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    sass-embedded (1.69.5)
+    sass-embedded (1.66.1)
       google-protobuf (~> 3.23)
       rake (>= 13.0.0)
-    sass-embedded (1.69.5-x86_64-darwin)
+    sass-embedded (1.66.1-x86_64-darwin)
       google-protobuf (~> 3.23)
-    sass-embedded (1.69.5-x86_64-linux-gnu)
+    sass-embedded (1.66.1-x86_64-linux-gnu)
       google-protobuf (~> 3.23)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -410,7 +415,7 @@ DEPENDENCIES
   bootsnap (>= 1.8.1)
   camaleon_cms (>= 2.7.3)
   capybara (>= 3.26)
-  dartsass-rails (~> 0.5.0)
+  dartsass-sprockets
   derailed_benchmarks
   draper (>= 3)
   font-awesome-rails
