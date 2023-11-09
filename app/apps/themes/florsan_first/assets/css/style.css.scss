@@ -325,7 +325,7 @@ input[type="button"],
 input[type="reset"] {
   background: #e05d22; /* Old browsers */
   background: linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
-  border: none;
+  border: 0;
   border-bottom: 3px solid #b93207;
   border-radius: 2px;
   color: #fff;
@@ -583,7 +583,7 @@ input[type="button"]:active,
 input[type="reset"]:active {
   background: #d94412; /* Old browsers */
   background: linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
-  border: none;
+  border: 0;
   border-top: 3px solid #b93207;
   padding: 10px 24px 11px;
 }
@@ -1205,7 +1205,7 @@ ul.nav-menu li:hover > ul,
   background-position: 5px center;
   background-repeat: no-repeat;
   background-size: 24px 24px;
-  border: none;
+  border: 0;
   cursor: pointer;
   height: 37px;
   margin: 3px 0;
@@ -1394,7 +1394,7 @@ footer.entry-meta {
 
 .page-links .page-links-title {
   background: transparent;
-  border: none;
+  border: 0;
   margin-right: 20px;
   padding: 0;
 }
@@ -2882,7 +2882,7 @@ div.wp-caption.alignright .wp-caption-text {
   .menu-toggle:focus,
   .menu-toggle:active {
     background: none;
-    border: none;
+    border: 0;
     color: #141412;
     padding: 12px 0 12px 20px;
   }
