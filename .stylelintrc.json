@@ -1,11 +1,12 @@
 {
-  "extends": "stylelint-config-standard-scss",
+  "extends": "stylelint-config-sass-guidelines",
   "rules": {
     "font-family-no-missing-generic-family-keyword": [
       true,
-      {
-        "ignoreFontFamilies": ["Genericons"]
-      }
-    ]
+      {"ignoreFontFamilies": ["Genericons"]}
+    ],
+    "selector-no-qualifying-type": null,
+    "selector-max-compound-selectors": 5,
+    "selector-max-id": 2
   }
 }
