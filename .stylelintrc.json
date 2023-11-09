@@ -5,6 +5,7 @@
       true,
       {"ignoreFontFamilies": ["Genericons"]}
     ],
+    "max-nesting-depth": 2,
     "selector-no-qualifying-type": null,
     "selector-max-compound-selectors": 5,
     "selector-max-id": 2
