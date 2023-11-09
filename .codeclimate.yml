@@ -9,7 +9,7 @@ exclude_patterns:
 plugins:
   rubocop:
     enabled: true
-    channel: 'rubocop-1-24-1'
+    channel: beta
   brakeman:
     enabled: true
   bundler-audit:
