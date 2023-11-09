@@ -2,7 +2,7 @@
     <header class="page-header">
         <h1 class="page-title"><%= ct('search_msg', default: 'Text searched: ')%> <%= params[:q] %></h1>
     </header>
-    <div class="panel panel-primary post_list no-line">
+    <div class="panel panel-primary post-list no-line">
         <div class="panel-body">
             <div class="row">
                 <% @posts.each_with_index do |post, index| %>
