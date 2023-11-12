@@ -11,6 +11,7 @@ gem 'camaleon_cms', '>= 2.7.3'
 gem 'dartsass-sprockets'
 gem 'draper', '>= 3'
 gem 'font-awesome-rails'
+gem 'genericons-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

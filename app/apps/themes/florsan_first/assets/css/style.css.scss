@@ -495,7 +495,7 @@ hr {
 .error404 .page-title::before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  font: normal 16px/1 Genericons;
+  font: normal 16px/1 Genericons, sans-serif;
   vertical-align: text-bottom;
 }
 
@@ -509,7 +509,7 @@ hr {
 .categories-links a:first-child::before {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
-  font: normal 16px/1 Genericons;
+  font: normal 16px/1 Genericons, sans-serif;
   vertical-align: text-bottom;
 }
 
