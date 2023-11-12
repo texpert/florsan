@@ -10,6 +10,7 @@
  *
  *= require camaleon_cms/bootstrap.min
  *= require font-awesome
+ *= require genericons
  *= require ./style
  *= require ./styles
  */

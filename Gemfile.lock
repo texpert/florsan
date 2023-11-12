@@ -178,6 +178,7 @@ GEM
     ffi (1.16.3)
     font-awesome-rails (4.7.0.8)
       railties (>= 3.2, < 8.0)
+    genericons-rails (0.5.0)
     get_process_mem (0.2.7)
       ffi (~> 1.0)
     globalid (1.2.1)
@@ -419,6 +420,7 @@ DEPENDENCIES
   derailed_benchmarks
   draper (>= 3)
   font-awesome-rails
+  genericons-rails
   localhost
   mini_racer
   net-http
