@@ -252,7 +252,7 @@ GEM
       sprockets (~> 4.0)
     oj (3.16.3)
       bigdecimal (>= 3.0)
-    parallel (1.23.0)
+    parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
