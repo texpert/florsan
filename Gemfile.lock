@@ -113,7 +113,8 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.7.4)
+    camaleon_cms (2.7.5)
+      addressable
       aws-sdk-s3 (~> 1)
       bcrypt
       breadcrumbs_on_rails
@@ -122,6 +123,7 @@ GEM
       cancancan (>= 2.0, < 4)
       draper (>= 4.0.2)
       font-awesome-rails
+      ipaddress
       jquery-rails
       meta-tags (~> 2.0)
       mini_magick
@@ -192,6 +194,7 @@ GEM
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.1)
+    ipaddress (0.8.3)
     irb (1.11.0)
       rdoc
       reline (>= 0.3.8)
