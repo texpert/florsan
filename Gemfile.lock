@@ -193,9 +193,9 @@ GEM
       concurrent-ruby (~> 1.0)
     io-console (0.7.1)
     ipaddress (0.8.3)
-    irb (1.11.0)
+    irb (1.11.1)
       rdoc
-      reline (>= 0.3.8)
+      reline (>= 0.4.2)
     jmespath (1.6.2)
     jquery-rails (4.6.0)
       rails-dom-testing (>= 1, < 3)
