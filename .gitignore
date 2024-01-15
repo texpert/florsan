@@ -34,17 +34,7 @@ public/invoices/*
 public/uploads/*
 public/dev-assets/*
 public/assets
-# Ignore bundler config.
-/.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
-# Ignore all logfiles and tempfiles.
-log/*
-!/log/.keep
-/tmp
 .sass-cache/
 .idea/
 *~
