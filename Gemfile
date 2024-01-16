@@ -3,7 +3,8 @@
 source 'https://rubygems.org'
 
 # ruby file: '.tool-versions'
-ruby File.read('.tool-versions').split("\n").find { |str| str.start_with?('ruby') }.delete_prefix('ruby ')
+# ruby File.read('.tool-versions').split("\n").find { |str| str.start_with?('ruby') }.delete_prefix('ruby ')
+ruby File.read('.ruby-version').strip
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.8.1', require: false
