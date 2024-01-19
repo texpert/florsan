@@ -258,7 +258,7 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.4)
-    psych (5.1.2)
+    psych (4.0.4)
       stringio
     public_suffix (5.0.4)
     puma (6.4.2)
@@ -432,6 +432,7 @@ DEPENDENCIES
   net-http
   oj
   pg
+  psych (~> 4.0)
   puma (~> 6.4)
   rack-mini-profiler (~> 3.3)
   rails (~> 7.1)
