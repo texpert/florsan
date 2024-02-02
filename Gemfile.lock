@@ -206,7 +206,7 @@ GEM
     libv8-node (18.16.0.0)
     libv8-node (18.16.0.0-x86_64-darwin)
     libv8-node (18.16.0.0-x86_64-linux)
-    localhost (1.1.10)
+    localhost (1.2.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
