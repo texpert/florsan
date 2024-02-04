@@ -59,7 +59,7 @@ sftp-config.json
 doc/localhost*.xml
 .vscode
 
-/config/credentials/development.key
+/config/credentials/*.key
 
 /app/assets/builds/*
 !/app/assets/builds/.keep

@@ -12,6 +12,21 @@
 
 * Configuration
 
+> ### 💡 Note: Multi environment credentials
+
+To edit the credentials file, run `EDITOR="nano" rails credentials:edit`. This command will create the credentials file
+the `config/master.key` if there is no such file, and, also, the `config/credentials.yml.enc`if it does not exist. 
+
+The `master.key` should be provisioned to the Rails app as the `RAILS_MASTER_KEY` environment variable by the hosting 
+platform (Heroku).
+
+Other credentials, including the `secret_key_base`, are typically stored in the encrypted files  per environment in the 
+`config/credentials` folder. These encrypted files could be edited, running in the terminal the following command:
+
+```shell
+$ EDITOR="nano" rails credentials:edit --environment=development
+```
+
 * Database creation
 
 * Database initialization
