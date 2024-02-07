@@ -2,6 +2,11 @@ version: 2
 updates:
   - package-ecosystem: bundler
     directory: "/"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
     schedule:
       interval: daily
       time: "03:00"
@@ -15,6 +20,11 @@ updates:
       time: "03:00"
   - package-ecosystem: npm
     directory: "/"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
     schedule:
       interval: daily
       time: "03:00"
