@@ -15,6 +15,11 @@ updates:
     - dependency-type: all
   - package-ecosystem: "github-actions"
     directory: "/"
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+      development-dependencies:
+        dependency-type: "development"
     schedule:
       interval: daily
       time: "03:00"
