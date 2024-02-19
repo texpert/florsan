@@ -2,11 +2,11 @@
 
 # README
 
-* Ruby version: 3.1.4
+* Ruby version: 3.2.3
 
-* Rails version: 7.1.1
+* Rails version: 7.1.3
 
-* Node JS version: 20.9.0
+* Node JS version: 20.11.1
 
 * System dependencies
 
