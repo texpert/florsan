@@ -31,7 +31,7 @@ AllCops:
   # Additional cops that do not reference a style guide rule may be enabled by
   # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
   # the --only-guide-cops option.
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.2
 
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
