@@ -3,9 +3,9 @@ updates:
   - package-ecosystem: bundler
     directory: "/"
     groups:
-      production-dependencies:
+      ruby-production-dependencies:
         dependency-type: "production"
-      development-dependencies:
+      ruby-development-dependencies:
         dependency-type: "development"
     schedule:
       interval: daily
@@ -16,9 +16,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     groups:
-      production-dependencies:
+      gha-production-dependencies:
         dependency-type: "production"
-      development-dependencies:
+      gha-development-dependencies:
         dependency-type: "development"
     schedule:
       interval: daily
@@ -26,9 +26,9 @@ updates:
   - package-ecosystem: npm
     directory: "/"
     groups:
-      production-dependencies:
+      js-production-dependencies:
         dependency-type: "production"
-      development-dependencies:
+      js-development-dependencies:
         dependency-type: "development"
     schedule:
       interval: daily
