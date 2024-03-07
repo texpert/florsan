@@ -188,12 +188,11 @@ GEM
     google-protobuf (3.25.3-x86_64-linux)
     heapy (0.2.0)
       thor
-    i18n (1.14.3)
+    i18n (1.14.4)
       concurrent-ruby (~> 1.0)
-      racc (~> 1.7)
     io-console (0.7.2)
     ipaddress (0.8.3)
-    irb (1.11.2)
+    irb (1.12.0)
       rdoc
       reline (>= 0.4.2)
     jmespath (1.6.2)
