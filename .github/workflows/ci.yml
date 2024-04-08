@@ -19,7 +19,7 @@ jobs:
       - name: install app dependencies
         run: yarn install --frozen-lockfile
       - name: ESLint
-        run: yarn eslint --ext .js
+        run: yarn eslint
 
   stylelint:
     if: |

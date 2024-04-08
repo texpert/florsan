@@ -1,13 +1,13 @@
-import { createConsumer } from '@rails/actioncable';
+import { createConsumer } from '@rails/actioncable'
 
-let consumer;
+let consumer
 
 const createChannel = (...args) => {
   if (!consumer) {
-    consumer = createConsumer();
+    consumer = createConsumer()
   }
 
-  return consumer.subscriptions.create(...args);
-};
+  return consumer.subscriptions.create(...args)
+}
 
-export default createChannel;
+export default createChannel

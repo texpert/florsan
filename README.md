@@ -4,7 +4,7 @@
 
 * Ruby version: 3.2.3
 
-* Rails version: 7.1.3
+* Rails version: 7.1.3.2
 
 * Node JS version: 20.11.1
 
@@ -142,7 +142,7 @@ $ bundle exec derailed exec --help
 Run the following command:
 
 ```bash
-yarn eslint --ext .js
+yarn eslint
 ```
 
 ### Stylelint
