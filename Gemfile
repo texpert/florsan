@@ -14,14 +14,10 @@ gem 'dartsass-sprockets'
 gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 gem 'genericons-rails'
-
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
-gem 'mini_racer'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
 gem 'oj'
 gem 'pg'
-gem 'psych', '~> 4.0'
+gem 'psych'
 gem 'puma', '~> 6.4'
 gem 'rails', '~> 7.1'
 gem 'sprockets-rails'
