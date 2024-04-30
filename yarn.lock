@@ -111,7 +111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.1.1":
+"@eslint/js@npm:9.1.1, @eslint/js@npm:^9.1.1":
   version: 9.1.1
   resolution: "@eslint/js@npm:9.1.1"
   checksum: 10c0/b25d11736b91d8df44dd217e88adb1f43d2bd5911ef4f4033e51faffe370f28d329731ffbf841d0b8303c8eedb60bda8c3a9efe803bb3b3737a06bb22c09ad0c
@@ -708,8 +708,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "florsan@workspace:."
   dependencies:
+    "@eslint/js": "npm:^9.1.1"
     eslint: "npm:^9.1.1"
+    globals: "npm:15.1.0"
     postcss: "npm:^8.4.38"
+    postcss-scss: "npm:^4.0.9"
     stylelint: "npm:^16.4.0"
     stylelint-config-sass-guidelines: "npm:^11.1.0"
   languageName: unknown
@@ -750,6 +753,13 @@ __metadata:
     kind-of: "npm:^6.0.2"
     which: "npm:^1.3.1"
   checksum: 10c0/510f489fb68d1cc7060f276541709a0ee6d41356ef852de48f7906c648ac223082a1cc8fce86725ca6c0e032bcdc1189ae77b4744a624b29c34a9d0ece498269
+  languageName: node
+  linkType: hard
+
+"globals@npm:15.1.0":
+  version: 15.1.0
+  resolution: "globals@npm:15.1.0"
+  checksum: 10c0/ae9cd15057dc6a21d6dbafe9f47b66bd063c6d3c9215fa1e8294bd130d89f188c48370a11a9525a5a33bd8689fc4fdfd3f474d930692d7abb7459cd982503336
   languageName: node
   linkType: hard
 

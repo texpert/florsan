@@ -2,7 +2,7 @@ import globals from "globals";
 import js from "@eslint/js";
 
 export default [
-    { ignores: ["**/public/"] },
+    { ignores: ["**/public/", ".pnp.cjs", ".pnp.loader.mjs"] },
     {
         languageOptions: {
             sourceType: "module",
