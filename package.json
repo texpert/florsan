@@ -1,11 +1,9 @@
 {
   "name": "florsan",
-  "private": false,
   "engines": {
     "node": "20.x",
-    "yarn": "1.x"
+    "yarn": "4.x"
   },
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^9.1.1",
     "postcss": "^8.4.38",
@@ -14,5 +12,6 @@
   },
   "repository": "https://github.com/texpert/florsan.git",
   "author": "Aurel Branzeanu <branzeanu.aurel@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@4.1.1"
 }
