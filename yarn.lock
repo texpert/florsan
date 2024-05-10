@@ -70,9 +70,9 @@ __metadata:
   linkType: hard
 
 "@dual-bundle/import-meta-resolve@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@dual-bundle/import-meta-resolve@npm:4.0.0"
-  checksum: 10c0/868b8314fc753b7767887108535afe3288de941d92bc8453164dbcb1abe886b171e338f6f7d02ff556256dee69c90e4ac6360e0c6a856a5ad7190274ab52de2e
+  version: 4.1.0
+  resolution: "@dual-bundle/import-meta-resolve@npm:4.1.0"
+  checksum: 10c0/55069e550ee2710e738dd8bbd34aba796cede456287454b50c3be46fbef8695d00625677f3f41f5ffbec1174c0f57f314da9a908388bc9f8ad41a8438db884d9
   languageName: node
   linkType: hard
 
