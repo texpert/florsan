@@ -38,3 +38,36 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Stylelint
         run: yarn stylelint "**/*.{css,js,scss}" -f github
+
+  rubocop:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # If running on a self-hosted runner, check it meets the requirements
+      # listed at https://github.com/ruby/setup-ruby#using-self-hosted-runners
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+
+      # This step is not necessary if you add the gem to your Gemfile
+      - name: Install Code Scanning integration
+        run: bundle add code-scanning-rubocop --version 0.6.1 --skip-install
+
+      - name: Install dependencies
+        run: RAILS_ENV=test bundle install
+
+      - name: Rubocop run
+        run: |
+          bash -c "
+            RAILS_ENV=test bundle exec rubocop --require code_scanning --format CodeScanning::SarifFormatter -o rubocop.sarif
+            [[ $? -ne 2 ]]
+          "
+
+      - name: Upload Sarif output
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: rubocop.sarif
