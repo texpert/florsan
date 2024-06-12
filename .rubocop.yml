@@ -6,6 +6,7 @@ require:
   - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
 
 inherit_from:
   - enabled.yml
@@ -74,3 +75,6 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'spec/**/*.rb'
     - 'db/**/*.rb'
+
+Capybara:
+  Enabled: true
