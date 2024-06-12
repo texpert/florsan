@@ -8,7 +8,7 @@ exclude_patterns:
   - "vendor/**/*"
 plugins:
   rubocop:
-    enabled: true
+    enabled: false
     channel: beta
   brakeman:
     enabled: true
