@@ -221,7 +221,7 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
-    memory_profiler (1.0.1)
+    memory_profiler (1.0.2)
     meta-tags (2.21.0)
       actionpack (>= 6.0.0, < 7.2)
     mini_histogram (0.3.1)
@@ -334,7 +334,7 @@ GEM
       rubocop (~> 1.41)
     rubocop-factory_bot (2.26.1)
       rubocop (~> 1.61)
-    rubocop-performance (1.21.0)
+    rubocop-performance (1.21.1)
       rubocop (>= 1.48.1, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
     rubocop-rails (2.25.0)
