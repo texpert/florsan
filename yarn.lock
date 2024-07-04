@@ -44,9 +44,9 @@ __metadata:
   linkType: hard
 
 "@csstools/css-tokenizer@npm:^2.3.1":
-  version: 2.3.2
-  resolution: "@csstools/css-tokenizer@npm:2.3.2"
-  checksum: 10c0/f7d0d8b3e9e2dcdc6547a387253a09dbbacaaffb5c8718bcd7f15dddeefdd441b73fc5f9fad3f03fabef3b37ec4b62be7ff79caab366427fa90eaf54cd8fc452
+  version: 2.3.3
+  resolution: "@csstools/css-tokenizer@npm:2.3.3"
+  checksum: 10c0/a090b4d139ee0399cf4d31c38a16dcfd739dfb4477ea79230917372bbf2f8cce31cb9f02ac2f6800ad7a005b5331ef97a6df426bd814d2e580a53e1257c253c9
   languageName: node
   linkType: hard
 
@@ -187,11 +187,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.12.0":
-  version: 8.12.0
-  resolution: "acorn@npm:8.12.0"
+  version: 8.12.1
+  resolution: "acorn@npm:8.12.1"
   bin:
     acorn: bin/acorn
-  checksum: 10c0/a19f9dead009d3b430fa3c253710b47778cdaace15b316de6de93a68c355507bc1072a9956372b6c990cbeeb167d4a929249d0faeb8ae4bb6911d68d53299549
+  checksum: 10c0/51fb26cd678f914e13287e886da2d7021f8c2bc0ccc95e03d3e0447ee278dd3b40b9c57dc222acd5881adcf26f3edc40901a4953403232129e3876793cd17386
   languageName: node
   linkType: hard
 
