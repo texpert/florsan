@@ -996,6 +996,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"known-css-properties@npm:^0.34.0":
+  version: 0.34.0
+  resolution: "known-css-properties@npm:0.34.0"
+  checksum: 10c0/8549969f02b1858554e89faf4548ece37625d0d21b42e8d54fa53184e68e1512ef2531bb15941575ad816361ab7447b598c1b18c1b96ce0a868333d1a68f2e2c
+  languageName: node
+  linkType: hard
+
 "levn@npm:^0.4.1":
   version: 0.4.1
   resolution: "levn@npm:0.4.1"
@@ -1428,17 +1435,17 @@ __metadata:
   linkType: hard
 
 "stylelint-scss@npm:^6.2.1":
-  version: 6.3.2
-  resolution: "stylelint-scss@npm:6.3.2"
+  version: 6.4.0
+  resolution: "stylelint-scss@npm:6.4.0"
   dependencies:
-    known-css-properties: "npm:^0.31.0"
+    known-css-properties: "npm:^0.34.0"
     postcss-media-query-parser: "npm:^0.2.3"
     postcss-resolve-nested-selector: "npm:^0.1.1"
     postcss-selector-parser: "npm:^6.1.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.0.2
-  checksum: 10c0/2023ffa47e38e9b4844efc0d289d28465b7462297c1c17d46422e2169cbff00c917f9f322e11b53f312cba4a41a196daf3073da56857b218dd1bae8839f6f62b
+  checksum: 10c0/1c06cf5f2c2cc797be320be25df75de2210a818a30448271388b2523a7b37ba33ed898052b4eed78f651f535fb1128d3908bd9bbc09b43ee1cb31753c1c5fef3
   languageName: node
   linkType: hard
 
