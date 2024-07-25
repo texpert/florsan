@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/integer/time'
-require_relative '../../app/services/no_compression'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -28,8 +27,7 @@ Rails.application.configure do
   config.public_file_server.headers = { 'Cache-Control' => 'public, max-age=31536000' }
 
   # Compress CSS using a preprocessor.
-  # config.assets.css_compressor = :sass
-  config.assets.css_compressor = NoCompression.new
+  config.assets.css_compressor = :sass
 
   # Do not fall back to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
