@@ -113,7 +113,7 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.7.5)
+    camaleon_cms (2.8.0)
       addressable
       aws-sdk-s3 (~> 1)
       bcrypt
@@ -129,6 +129,7 @@ GEM
       mini_magick
       non-digest-assets (~> 2.0)
       sass-rails
+      sprockets-rails (>= 3.5.1)
       tinymce-rails (< 5)
       will_paginate
       will_paginate-bootstrap
@@ -428,7 +429,7 @@ PLATFORMS
 DEPENDENCIES
   benchmark-ips (>= 2.9.1)
   bootsnap (>= 1.8.1)
-  camaleon_cms (>= 2.7.3)
+  camaleon_cms (>= 2.8.0)
   capybara (>= 3.26)
   dartsass-sprockets
   derailed_benchmarks
