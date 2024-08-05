@@ -1137,12 +1137,8 @@ ul.nav-menu li:hover > ul,
 }
 
 .dropdown-menu {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
   background-color: #220e10;
-  border-color: -moz-use-text-color #f7f5e7 #f7f5e7;
+  border-color: #f7f5e7;
   border-image: none;
   border-style: none solid solid;
   border-width: 0 2px 2px;
@@ -2650,10 +2646,6 @@ div.wp-caption.alignright .wp-caption-text {
  * 8.0 Media Queries
  * ----------------------------------------------------------------------------
  */
-
-@viewport {
-  width: device-width;
-}
 
 @media (max-width: 1599px) {
   .site {
