@@ -4,7 +4,7 @@
 
 * Ruby version: 3.3.4
 
-* Rails version: 7.1.3.4
+* Rails version: 7.2
 
 * Node JS version: 20.15.0
 

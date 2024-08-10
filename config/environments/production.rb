@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/integer/time'
+require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
@@ -46,9 +46,12 @@ Rails.application.configure do
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
 
+  # Skip http-to-https redirect for the default health check endpoint.
+  config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } } }
+
   # Log to STDOUT by default
-  config.logger = ActiveSupport::Logger.new($stdout)
-                                       .tap  { |logger| logger.formatter = Logger::Formatter.new }
+  config.logger = ActiveSupport::Logger.new(STDOUT)
+                                       .tap  { |logger| logger.formatter = ::Logger::Formatter.new }
                                        .then { |logger| ActiveSupport::TaggedLogging.new(logger) }
 
   # Prepend all log lines with the following tags.
@@ -57,7 +60,7 @@ Rails.application.configure do
   # "info" includes generic and useful information about system operation, but avoids logging too much
   # information to avoid inadvertent exposure of personally identifiable information (PII). If you
   # want to log everything, set the level to "debug".
-  config.log_level = ENV.fetch('RAILS_LOG_LEVEL', 'info')
+  config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
 
   # Use a different cache store in production.
   config.cache_store = :memory_store
@@ -66,6 +69,8 @@ Rails.application.configure do
   # config.active_job.queue_adapter = :resque
   # config.active_job.queue_name_prefix = "florsan_production"
 
+  # Disable caching for Action Mailer templates even if Action Controller
+  # caching is enabled.
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.

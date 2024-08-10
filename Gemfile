@@ -13,11 +13,12 @@ gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 gem 'genericons-rails'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
+gem 'non-digest-assets', git: 'https://github.com/mvz/non-digest-assets'
 gem 'oj'
 gem 'pg'
 gem 'psych'
 gem 'puma', '~> 6.4'
-gem 'rails', '~> 7.1'
+gem 'rails', '~> 7.2'
 gem 'sprockets-rails', '>= 3.5.1'
 gem 'turbolinks', '~> 5'
 
