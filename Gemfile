@@ -19,7 +19,7 @@ gem 'pg'
 gem 'psych'
 gem 'puma', '~> 6.4'
 gem 'rails', '~> 7.2'
-gem 'sprockets-rails', '>= 3.5.1'
+gem 'sprockets-rails', '>= 3.5.1', require: 'sprockets/railtie'
 gem 'turbolinks', '~> 5'
 
 # Use Uglifier as compressor for JavaScript assets
