@@ -14,7 +14,17 @@ Rails.application.configure do
   config.eager_load = false
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  config.force_ssl = true
+
+  config.ssl_options = { redirect: { exclude: ->(request) { request.path == "/up" } }, hsts: { expires: 0 } }
+
+  # Disabling HSTS on this local site in Firefox:
+  # If the host or its parent is not in your profile settings then it must be a "pre-loaded" domain. The only fix for
+  # that is to turn off enforcement of preloaded HSTS using the pref "network.stricttransportsecurity.preloadlist" .
+  # You don't need to restart Firefox for that to work if you change it in about:config.
+  # Allow self-signed certificates in Chrome:
+  # use "Allow insecure localhost" workaround by going to chrome://flags/#allow-insecure-localhost
+  config.hosts << "florsan.dev:3000"
 
   # Show full error reports.
   config.consider_all_requests_local = true
