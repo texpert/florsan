@@ -37,6 +37,10 @@ AllCops:
 
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
 
 ##################### Metrics ##################################
 
