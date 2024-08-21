@@ -117,7 +117,7 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.8.0)
+    camaleon_cms (2.8.1)
       addressable
       aws-sdk-s3 (~> 1)
       bcrypt
@@ -125,6 +125,7 @@ GEM
       cama_contact_form (~> 0.1.0)
       cama_meta_tag
       cancancan (>= 2.0, < 4)
+      dartsass-sprockets
       draper (>= 4.0.2)
       font-awesome-rails
       ipaddress
@@ -132,7 +133,6 @@ GEM
       meta-tags (~> 2.0)
       mini_magick
       non-digest-assets (~> 2.0)
-      sass-rails
       sprockets-rails (>= 3.5.1)
       tinymce-rails (< 5)
       will_paginate
@@ -354,7 +354,7 @@ GEM
       rubocop (~> 1.61)
       rubocop-rspec (~> 3, >= 3.0.1)
     ruby-progressbar (1.13.0)
-    ruby-statistics (4.0.1)
+    ruby-statistics (4.0.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     sass-embedded (1.77.8)
@@ -364,18 +364,8 @@ GEM
       google-protobuf (~> 4.26)
     sass-embedded (1.77.8-x86_64-linux-gnu)
       google-protobuf (~> 4.26)
-    sass-rails (6.0.0)
-      sassc-rails (~> 2.1, >= 2.1.1)
-    sassc (2.4.0)
-      ffi (~> 1.9)
     sassc-embedded (1.77.8)
       sass-embedded (~> 1.77)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     securerandom (0.3.1)
     selenium-webdriver (4.23.0)
       base64 (~> 0.2)
@@ -433,7 +423,7 @@ PLATFORMS
 DEPENDENCIES
   benchmark-ips (>= 2.9.1)
   bootsnap (>= 1.8.1)
-  camaleon_cms (>= 2.8.0)
+  camaleon_cms (>= 2.8.1)
   capybara (>= 3.26)
   dartsass-sprockets
   derailed_benchmarks
