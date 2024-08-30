@@ -13,7 +13,7 @@ gem 'draper', '>= 3'
 gem 'font-awesome-rails'
 gem 'genericons-rails'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
-gem 'non-digest-assets', git: 'https://github.com/mvz/non-digest-assets'
+gem 'non-digest-assets', '~> 2.4'
 gem 'oj'
 gem 'pg'
 gem 'psych'
@@ -35,7 +35,8 @@ end
 
 group :development do
   gem 'benchmark-ips', '>= 2.9.1'
-  gem 'derailed_benchmarks'
+  # TODO: Re-enable when the issue with ruby-statistics gem will be solved
+  # gem 'derailed_benchmarks'
   gem 'localhost', require: 'localhost/authority'
   gem 'rack-mini-profiler', '~> 3.3'
   gem 'rubocop', require: false
