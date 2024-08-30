@@ -22,9 +22,6 @@ gem 'rails', '~> 7.2'
 gem 'sprockets-rails', '>= 3.5.1', require: 'sprockets/railtie'
 gem 'turbolinks', '~> 5'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
