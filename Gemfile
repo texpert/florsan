@@ -6,7 +6,7 @@ ruby file: '.tool-versions'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.8.1', require: false
-gem 'camaleon_cms', '>= 2.8.1'
+gem 'camaleon_cms', '>= 2.8.3'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-sprockets'
 gem 'draper', '>= 3'
