@@ -160,9 +160,9 @@ __metadata:
   linkType: hard
 
 "@humanwhocodes/retry@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@humanwhocodes/retry@npm:0.3.0"
-  checksum: 10c0/7111ec4e098b1a428459b4e3be5a5d2a13b02905f805a2468f4fa628d072f0de2da26a27d04f65ea2846f73ba51f4204661709f05bfccff645e3cedef8781bb6
+  version: 0.3.1
+  resolution: "@humanwhocodes/retry@npm:0.3.1"
+  checksum: 10c0/f0da1282dfb45e8120480b9e2e275e2ac9bbe1cf016d046fdad8e27cc1285c45bb9e711681237944445157b430093412b4446c1ab3fc4bb037861b5904101d3b
   languageName: node
   linkType: hard
 
@@ -194,8 +194,8 @@ __metadata:
   linkType: hard
 
 "@stylistic/stylelint-plugin@npm:^3.0.1":
-  version: 3.1.0
-  resolution: "@stylistic/stylelint-plugin@npm:3.1.0"
+  version: 3.1.1
+  resolution: "@stylistic/stylelint-plugin@npm:3.1.1"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.1"
     "@csstools/css-tokenizer": "npm:^3.0.1"
@@ -207,7 +207,7 @@ __metadata:
     stylelint: "npm:^16.8.2"
   peerDependencies:
     stylelint: ^16.8.0
-  checksum: 10c0/eb1bc7f3839be09437f0ecc76ce95fd212ffbc6ca15f6fc1ac981331c24b467f3fee54668bd0b6bcb61e258ce2dd58293fd20936e781f8952b086bc3e0fa777f
+  checksum: 10c0/868d17f8dc7110d298b112d90f61361de4ca5807b7b68d37fe68cc2a8d630a048478e1634cb9a0e88089a69c170b951640cd6bf584e5402d8bb814e2699dd424
   languageName: node
   linkType: hard
 
@@ -1279,11 +1279,11 @@ __metadata:
   linkType: hard
 
 "postcss-safe-parser@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "postcss-safe-parser@npm:7.0.0"
+  version: 7.0.1
+  resolution: "postcss-safe-parser@npm:7.0.1"
   peerDependencies:
     postcss: ^8.4.31
-  checksum: 10c0/4217afd8ce2809e959dc365e4675f499303cc6b91f94db06c8164422822db2d3b3124df701ee2234db4127ad05619b016bfb9c2bccae9bf9cf898a396f1632c9
+  checksum: 10c0/6957b10b818bd8d4664ec0e548af967f7549abedfb37f844d389571d36af681340f41f9477b9ccf34bcc7599bdef222d1d72e79c64373001fae77089fba6d965
   languageName: node
   linkType: hard
 
