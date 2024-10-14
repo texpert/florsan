@@ -35,18 +35,18 @@ __metadata:
   linkType: hard
 
 "@csstools/css-parser-algorithms@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@csstools/css-parser-algorithms@npm:3.0.1"
+  version: 3.0.2
+  resolution: "@csstools/css-parser-algorithms@npm:3.0.2"
   peerDependencies:
-    "@csstools/css-tokenizer": ^3.0.1
-  checksum: 10c0/064c6d519197b5af43bbf5efe8f4cdbd361b006113aa82160d637e925b50c643a52d33d512ca01c63042d952d723a2a10798231a714668356b76668fb11294e3
+    "@csstools/css-tokenizer": ^3.0.2
+  checksum: 10c0/246afbf518ee9eaa24ed7f083360eb66884f1172fd4f8c663bff8c6099de2a8abd1e2a31d5b6fe42e010277d238469d780cff62bc7fdc6a52e7a90626b8924dc
   languageName: node
   linkType: hard
 
 "@csstools/css-tokenizer@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@csstools/css-tokenizer@npm:3.0.1"
-  checksum: 10c0/c9ed4373e5731b5375ea9791590081019c04e95f08b46b272977e5e7b8c3d560affc62e82263cb8def1df1e57f0673140e7e16a14a5e7be04e6a234be088d1d3
+  version: 3.0.2
+  resolution: "@csstools/css-tokenizer@npm:3.0.2"
+  checksum: 10c0/a74e5829420ed35982fd33be272c2a19cb2380179d357abe750aa848be6d6699d0437008f47a57eb7c6ff64a34b0c8f91a97dd63dbddd08249b7cf7983767e5e
   languageName: node
   linkType: hard
 
@@ -472,14 +472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-functions-list@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "css-functions-list@npm:3.2.2"
-  checksum: 10c0/8638a63d0cf1bdc50d4a752ec1c94a57e9953c3b03eace4f5526db20bec3c061e95089f905dbb4999c44b9780ce777ba856967560f6d15119a303f6030901c10
-  languageName: node
-  linkType: hard
-
-"css-functions-list@npm:^3.2.3":
+"css-functions-list@npm:^3.2.2, css-functions-list@npm:^3.2.3":
   version: 3.2.3
   resolution: "css-functions-list@npm:3.2.3"
   checksum: 10c0/03f9ed34eeed310d2b1cf0e524eea02bc5f87854a4de85f8957ea432ab1036841a3fb00879590519f7bb8fda40d992ce7a72fa9b61696ca1dc53b90064858f96
