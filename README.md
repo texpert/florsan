@@ -6,7 +6,7 @@
 
 * Rails version: 7.2.1.2
 
-* Node JS version: 20.16.0
+* Node JS (used only for running ESLint and stylelint) version: 22.10.0
 
 * System dependencies
 
