@@ -10,7 +10,6 @@ gem 'camaleon_cms', '>= 2.8.3'
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-sprockets'
 gem 'draper', '>= 3'
-gem 'font-awesome-rails'
 gem 'genericons-rails'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
 gem 'non-digest-assets', '~> 2.4'
