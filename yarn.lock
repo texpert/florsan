@@ -24,11 +24,11 @@ __metadata:
   linkType: hard
 
 "@csstools/css-parser-algorithms@npm:^3.0.1":
-  version: 3.0.3
-  resolution: "@csstools/css-parser-algorithms@npm:3.0.3"
+  version: 3.0.4
+  resolution: "@csstools/css-parser-algorithms@npm:3.0.4"
   peerDependencies:
-    "@csstools/css-tokenizer": ^3.0.2
-  checksum: 10c0/c1e634384affb10c3726a36f090867247005a2a470cb223de88debeab07921b78c0e7875e7847d90949c2b0ba88a290c71565f1839f7739c21a5bf1c870e137d
+    "@csstools/css-tokenizer": ^3.0.3
+  checksum: 10c0/d411f07765e14eede17bccc6bd4f90ff303694df09aabfede3fd104b2dfacfd4fe3697cd25ddad14684c850328f3f9420ebfa9f78380892492974db24ae47dbd
   languageName: node
   linkType: hard
 
