@@ -25,16 +25,8 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-end
-
-group :development do
-  gem 'benchmark-ips', '>= 2.9.1'
-  # TODO: Re-enable when the issue with ruby-statistics gem will be solved
-  # gem 'derailed_benchmarks'
-  gem 'localhost', require: 'localhost/authority'
-  gem 'rack-mini-profiler', '~> 3.3'
+  gem 'brakeman'
+  gem 'bundler-audit'
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
@@ -43,6 +35,14 @@ group :development do
   gem 'rubocop-rake', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
+end
+
+group :development do
+  gem 'benchmark-ips', '>= 2.9.1'
+  # TODO: Re-enable when the issue with ruby-statistics gem will be solved
+  # gem 'derailed_benchmarks'
+  gem 'localhost', require: 'localhost/authority'
+  gem 'rack-mini-profiler', '~> 3.3'
   gem 'stackprof'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
