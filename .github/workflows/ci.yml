@@ -66,7 +66,7 @@ jobs:
         with:
           bundler-cache: true
       - name: Generate binstubs
-        run: bundle binstubs bundler-audit brakeman
+        run: bundle binstubs bundler-audit brakeman --force
       - name: Security audit dependencies
         run: bin/bundler-audit --update
       - name: Security audit application code
