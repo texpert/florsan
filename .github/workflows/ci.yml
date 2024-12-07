@@ -1,5 +1,5 @@
-name: "test-on-pr"
-on: [pull_request]
+name: "test-on-push"
+on: [push]
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -40,34 +40,34 @@ jobs:
         run: yarn stylelint "**/*.{css,js,scss}" -f github
 
   rubocop:
+    if: |
+      !contains(github.event.pull_request.title, '[skip ci]')
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
-
-      # If running on a self-hosted runner, check it meets the requirements
-      # listed at https://github.com/ruby/setup-ruby#using-self-hosted-runners
-      - name: Set up Ruby
+      - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
-
-      # This step is not necessary if you add the gem to your Gemfile
-      - name: Install Code Scanning integration
-        run: bundle add code-scanning-rubocop --version 0.6.1 --skip-install
-
-      - name: Install dependencies
-        run: RAILS_ENV=test bundle install
-
-      - name: Rubocop run
-        run: |
-          bash -c "
-            RAILS_ENV=test bundle exec rubocop --require code_scanning --format CodeScanning::SarifFormatter -o rubocop.sarif
-            [[ $? -ne 2 ]]
-          "
-
-      - name: Upload Sarif output
-        uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: rubocop.sarif
+          bundler-cache: true
+      - name: Generate binstubs
+        run: bundle binstubs rubocop
+      - name: Lint Ruby files
+        run: bin/rubocop --parallel
+  security:
+    if: |
+      !contains(github.event.pull_request.title, '[skip ci]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Generate binstubs
+        run: bundle binstubs bundler-audit brakeman
+      - name: Security audit dependencies
+        run: bin/bundler-audit --update
+      - name: Security audit application code
+        run: bin/brakeman
