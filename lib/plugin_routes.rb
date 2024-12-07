@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'json'
-
 class PluginRoutes
   # draw "all" gems registered for the plugins or themes and camaleon gems
   def self.draw_gems
