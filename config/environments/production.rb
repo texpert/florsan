@@ -14,6 +14,13 @@ Rails.application.configure do
   # Full error reports are disabled.
   config.consider_all_requests_local = false
 
+  # Ensures that a master key has been made available in ENV["RAILS_MASTER_KEY"], config/master.key, or an environment
+  # key such as config/credentials/production.key. This key is used to decrypt credentials (and other encrypted files).
+  config.require_master_key = true
+
+  # Compress CSS using a preprocessor.
+  config.assets.css_compressor = :sass
+
   # Turn on fragment caching in view templates.
   config.action_controller.perform_caching = true
 
