@@ -23,7 +23,7 @@ Bundler.require(*Rails.groups)
 module Florsan
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 7.2
+    config.load_defaults 8.0
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
@@ -38,11 +38,10 @@ module Florsan
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # Don't generate system test files.
     config.generators.system_tests = nil
   end
 end
-
-Rails.autoloaders.main.ignore(Rails.root.join('app/channels/application_cable'))
 
 Oj.default_options = { mode: :custom, cache_keys: true, cache_str: 5 }
 Oj.optimize_rails
