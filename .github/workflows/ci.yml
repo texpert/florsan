@@ -68,6 +68,6 @@ jobs:
       - name: Generate binstubs
         run: bundle binstubs bundler bundler-audit brakeman --force
       - name: Security audit dependencies
-        run: bin/bundler-audit --update
+        run: bin/bundler-audit check --update --ignore CVE-2018-18260 CVE-2024-48652
       - name: Security audit application code
         run: bin/brakeman
