@@ -34,7 +34,7 @@ AllCops:
   # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
   # the --only-guide-cops option.
   TargetRubyVersion: 3.3
-  TargetRailsVersion: 7.2
+  TargetRailsVersion: 8.0
 
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
