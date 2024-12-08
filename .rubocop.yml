@@ -19,6 +19,7 @@ AllCops:
     - 'db/**/*'
     - 'node_modules/**/*'
     - 'public/assets/**/*'
+    - 'vendor/**/*'
   # Default formatter will be used if no -f/--format option is given.
   DisplayCopNames: true
   # Style guide URLs are not displayed in offense messages by default. Change
@@ -38,8 +39,6 @@ AllCops:
 Style/StringLiterals:
   ConsistentQuotesInMultiline: true
   Exclude:
-    - 'bin/**/*'
-    - 'db/**/*'
     - 'config/**/*'
 
 ##################### Metrics ##################################
@@ -78,7 +77,6 @@ Metrics/BlockLength:
     - 'Rakefile'
     - '**/*.rake'
     - 'spec/**/*.rb'
-    - 'db/**/*.rb'
 
 Capybara:
   Enabled: true
