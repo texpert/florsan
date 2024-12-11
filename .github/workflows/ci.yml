@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable && corepack prepare
+      - run: corepack enable && corepack prepare yarn@4.5.3
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22.10.0
           cache: 'yarn'
       - name: install app dependencies
         run: yarn install --frozen-lockfile
@@ -28,11 +28,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable && corepack prepare yarn@4.2.2
+      - run: corepack enable && corepack prepare yarn@4.5.3
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22.10.0
           cache: 'yarn'
       - name: install app dependencies
         run: yarn install --frozen-lockfile
