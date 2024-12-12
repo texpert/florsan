@@ -21,6 +21,8 @@ Rails.application.configure do
   # Compress CSS using a preprocessor.
   config.assets.css_compressor = :sass
 
+  config.assets.compile = false
+
   # Turn on fragment caching in view templates.
   config.action_controller.perform_caching = true
 
