@@ -2,7 +2,7 @@
 
 # README
 
-* Ruby version: 3.3.6
+* Ruby version: 3.4.1
 
 * Rails version: 8.0.1
 

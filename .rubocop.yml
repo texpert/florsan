@@ -33,7 +33,7 @@ AllCops:
   # Additional cops that do not reference a style guide rule may be enabled by
   # default. Change behavior by overriding StyleGuideCopsOnly, or by giving
   # the --only-guide-cops option.
-  TargetRubyVersion: 3.3
+  TargetRubyVersion: 3.4
   TargetRailsVersion: 8.0
 
 Style/StringLiterals:
