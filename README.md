@@ -8,7 +8,7 @@
 
 * Only for running ESLint and stylelint
   * Node JS (used only for running ESLint and stylelint) version: 22.12.0
-  * Yarn 4.5.3
+  * Yarn 4.6.0
 
 * System dependencies
 
