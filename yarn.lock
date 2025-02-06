@@ -238,8 +238,8 @@ __metadata:
   linkType: hard
 
 "@stylistic/stylelint-plugin@npm:^3.0.1":
-  version: 3.1.1
-  resolution: "@stylistic/stylelint-plugin@npm:3.1.1"
+  version: 3.1.2
+  resolution: "@stylistic/stylelint-plugin@npm:3.1.2"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^3.0.1"
     "@csstools/css-tokenizer": "npm:^3.0.1"
@@ -251,7 +251,7 @@ __metadata:
     stylelint: "npm:^16.8.2"
   peerDependencies:
     stylelint: ^16.8.0
-  checksum: 10c0/868d17f8dc7110d298b112d90f61361de4ca5807b7b68d37fe68cc2a8d630a048478e1634cb9a0e88089a69c170b951640cd6bf584e5402d8bb814e2699dd424
+  checksum: 10c0/90d6363f7d5aa7003b0a35a02716253839a8ae4f823485eaaae1d13a328c7a17bb792f376c93797f772abf84f22789209e9ccd3f6ae9f6c5a12aa1cd7a86d36e
   languageName: node
   linkType: hard
 
