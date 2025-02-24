@@ -122,9 +122,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/core@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "@eslint/core@npm:0.12.0"
+  dependencies:
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: 10c0/d032af81195bb28dd800c2b9617548c6c2a09b9490da3c5537fd2a1201501666d06492278bb92cfccac1f7ac249e58601dd87f813ec0d6a423ef0880434fa0c3
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "@eslint/eslintrc@npm:3.2.0"
+  version: 3.3.0
+  resolution: "@eslint/eslintrc@npm:3.3.0"
   dependencies:
     ajv: "npm:^6.12.4"
     debug: "npm:^4.3.2"
@@ -135,7 +144,7 @@ __metadata:
     js-yaml: "npm:^4.1.0"
     minimatch: "npm:^3.1.2"
     strip-json-comments: "npm:^3.1.1"
-  checksum: 10c0/43867a07ff9884d895d9855edba41acf325ef7664a8df41d957135a81a477ff4df4196f5f74dc3382627e5cc8b7ad6b815c2cea1b58f04a75aced7c43414ab8b
+  checksum: 10c0/215de990231b31e2fe6458f225d8cea0f5c781d3ecb0b7920703501f8cd21b3101fc5ef2f0d4f9a38865d36647b983e0e8ce8bf12fd2bcdd227fc48a5b1a43be
   languageName: node
   linkType: hard
 
@@ -154,12 +163,12 @@ __metadata:
   linkType: hard
 
 "@eslint/plugin-kit@npm:^0.2.5":
-  version: 0.2.6
-  resolution: "@eslint/plugin-kit@npm:0.2.6"
+  version: 0.2.7
+  resolution: "@eslint/plugin-kit@npm:0.2.7"
   dependencies:
-    "@eslint/core": "npm:^0.11.0"
+    "@eslint/core": "npm:^0.12.0"
     levn: "npm:^0.4.1"
-  checksum: 10c0/2d4cc4497c62e2a6437039fdd778911d768b0706c6256568c4ff1ad8724f663b2fa04a5873db6a20a812be11166e78e0346acfde4b7149e10e92f7b0075a976e
+  checksum: 10c0/0a1aff1ad63e72aca923217e556c6dfd67d7cd121870eb7686355d7d1475d569773528a8b2111b9176f3d91d2ea81f7413c34600e8e5b73d59e005d70780b633
   languageName: node
   linkType: hard
 
@@ -1401,6 +1410,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-selector-parser@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "postcss-selector-parser@npm:7.1.0"
+  dependencies:
+    cssesc: "npm:^3.0.0"
+    util-deprecate: "npm:^1.0.2"
+  checksum: 10c0/0fef257cfd1c0fe93c18a3f8a6e739b4438b527054fd77e9a62730a89b2d0ded1b59314a7e4aaa55bc256204f40830fecd2eb50f20f8cb7ab3a10b52aa06c8aa
+  languageName: node
+  linkType: hard
+
 "postcss-value-parser@npm:^4.2.0":
   version: 4.2.0
   resolution: "postcss-value-parser@npm:4.2.0"
@@ -1605,8 +1624,8 @@ __metadata:
   linkType: hard
 
 "stylelint-scss@npm:^6.2.1":
-  version: 6.11.0
-  resolution: "stylelint-scss@npm:6.11.0"
+  version: 6.11.1
+  resolution: "stylelint-scss@npm:6.11.1"
   dependencies:
     css-tree: "npm:^3.0.1"
     is-plain-object: "npm:^5.0.0"
@@ -1614,11 +1633,11 @@ __metadata:
     mdn-data: "npm:^2.15.0"
     postcss-media-query-parser: "npm:^0.2.3"
     postcss-resolve-nested-selector: "npm:^0.1.6"
-    postcss-selector-parser: "npm:^7.0.0"
+    postcss-selector-parser: "npm:^7.1.0"
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.0.2
-  checksum: 10c0/d02a51a8ac0cc26f582654eddd0883c3c7794b7474c86fbf86079689d0ebc1d2b878c1459f45ab6c1ea6a33b8a16ab26d8e9cf7a25769ff368002751290f0a08
+  checksum: 10c0/63b6cd02db1e7fa04f0bafe94d3772ab95dfcd60b8d329142d7d82f5247a6ad4a3d4ace6e4983d501a8f996e3dce08117a47db47623d1ee9a58649ca7b81fcd0
   languageName: node
   linkType: hard
 
