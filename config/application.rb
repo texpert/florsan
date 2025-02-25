@@ -45,6 +45,3 @@ end
 
 # Without the following line, application will fail with Zeitwerk::NameError
 Rails.autoloaders.main.ignore(Rails.root.join('app/channels/application_cable'))
-
-Oj.default_options = { mode: :custom, cache_keys: true, cache_str: 5 }
-Oj.optimize_rails

@@ -13,7 +13,6 @@ gem 'draper', '>= 3'
 gem 'genericons-rails'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
 gem 'non-digest-assets', '~> 2.5'
-gem 'oj'
 gem 'pg'
 gem 'psych'
 gem 'puma', '~> 6.6'
