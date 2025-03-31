@@ -241,7 +241,7 @@ GEM
       activesupport (>= 6.0, < 8.1)
       sprockets (~> 4.0)
     parallel (1.26.3)
-    parser (3.3.7.3)
+    parser (3.3.7.4)
       ast (~> 2.4.1)
       racc
     pg (1.5.9)
