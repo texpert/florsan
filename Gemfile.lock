@@ -240,7 +240,7 @@ GEM
     non-digest-assets (2.5.0)
       activesupport (>= 6.0, < 8.1)
       sprockets (~> 4.0)
-    parallel (1.26.3)
+    parallel (1.27.0)
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
