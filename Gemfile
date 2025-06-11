@@ -41,7 +41,7 @@ group :development do
   # TODO: Re-enable when the issue with ruby-statistics gem will be solved
   # gem 'derailed_benchmarks'
   gem 'localhost', require: 'localhost/authority'
-  gem 'rack-mini-profiler', '~> 3.3'
+  gem 'rack-mini-profiler', '~> 4.0'
   gem 'stackprof'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
