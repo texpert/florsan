@@ -397,12 +397,12 @@ __metadata:
   linkType: hard
 
 "cacheable@npm:^1.10.0":
-  version: 1.10.1
-  resolution: "cacheable@npm:1.10.1"
+  version: 1.10.2
+  resolution: "cacheable@npm:1.10.2"
   dependencies:
     hookified: "npm:^1.10.0"
     keyv: "npm:^5.3.4"
-  checksum: 10c0/2376587df607a84987dc13c0f334270a58056537ee0c0a41987e2523b41fea4bf313b6f4565cfb91319e58eb29944e830d4ef2b15db8715eb39d197e663f5a32
+  checksum: 10c0/33fe7620c9cd1038032dcf493051915f00c2a38a28c3e8e056c617e1800208f139c4b7e3c65c29fd92a5ec45dd8a0eaafedffa538b84469302db2482c6b7832d
   languageName: node
   linkType: hard
 
