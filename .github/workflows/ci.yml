@@ -13,7 +13,7 @@ jobs:
       !contains(github.event.pull_request.title, '[skip ci]')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: corepack enable && corepack prepare yarn@4.9.2
       - name: setup node
         uses: actions/setup-node@v4
@@ -30,7 +30,7 @@ jobs:
       !contains(github.event.pull_request.title, '[skip ci]')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: corepack enable && corepack prepare yarn@4.9.2
       - name: setup node
         uses: actions/setup-node@v4
@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
@@ -63,7 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
