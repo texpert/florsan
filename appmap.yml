@@ -1,5 +1,5 @@
 # 'name' should be the same as the code repo name.
-name: rails_6_rss_reader
+name: florsan
 packages:
   - path: app/apps
   - path: app/assets
