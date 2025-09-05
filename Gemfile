@@ -15,7 +15,7 @@ gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already
 gem 'non-digest-assets', '~> 2.5'
 gem 'pg'
 gem 'psych'
-gem 'puma', '~> 6.6'
+gem 'puma', '~> 7.0'
 gem 'rails', '~> 8.0'
 gem 'sprockets-rails', '>= 3.5.1', require: 'sprockets/railtie'
 gem 'turbolinks', '~> 5'
