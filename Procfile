@@ -1,2 +1,1 @@
-# web: bundle exec puma -C config/puma.rb
-web: bin/rails server -p 3000
+web: bundle exec puma -C config/puma.rb -e production -p 3000
