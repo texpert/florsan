@@ -31,8 +31,8 @@ workers_count = Integer(ENV['WEB_CONCURRENCY'] || 1)
 threads threads_count, threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
-port ENV.fetch("PORT", 3000)
-# bind 'ssl://localhost:3000' if Rails.env.development?
+port ENV.fetch("PORT", 3000) unless Rails.env.development?
+bind 'ssl://localhost:3000' if Rails.env.development?
 
 # Specifies the `environment` that Puma will run in.
 environment ENV['RACK_ENV'] || ENV['RAILS_ENV'] || 'development'
