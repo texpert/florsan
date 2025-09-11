@@ -193,9 +193,9 @@ __metadata:
   linkType: hard
 
 "@keyv/serialize@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@keyv/serialize@npm:1.1.0"
-  checksum: 10c0/30e34adf4fff52374c2c531e3ff215eed6414350ee56eebcb98c422feaff171b4900c73082a72399a6bfbc5ce60fbb6f968594110c960521923499146bc68c20
+  version: 1.1.1
+  resolution: "@keyv/serialize@npm:1.1.1"
+  checksum: 10c0/b0008cae4a54400c3abf587b8cc2474c6f528ee58969ce6cf9cb07a04006f80c73c85971d6be6544408318a2bc40108236a19a82aea0a6de95aae49533317374
   languageName: node
   linkType: hard
 
