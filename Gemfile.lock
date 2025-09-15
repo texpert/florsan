@@ -232,12 +232,12 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.9)
+    nokogiri (1.18.10)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-darwin)
+    nokogiri (1.18.10-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
     non-digest-assets (2.5.0)
       activesupport (>= 6.0, < 8.1)
@@ -257,7 +257,7 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (7.0.2)
+    puma (7.0.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.1)
@@ -304,7 +304,7 @@ GEM
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
-    recaptcha (5.20.1)
+    recaptcha (5.21.0)
     regexp_parser (2.11.2)
     reline (0.6.2)
       io-console (~> 0.5)
@@ -438,7 +438,7 @@ DEPENDENCIES
   non-digest-assets (~> 2.5)
   pg
   psych
-  puma (= 7.0.2)
+  puma (= 7.0.3)
   rack-mini-profiler (~> 4.0)
   rails (~> 8.0)
   rubocop
