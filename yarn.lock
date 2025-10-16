@@ -868,9 +868,9 @@ __metadata:
   linkType: hard
 
 "hookified@npm:^1.11.0":
-  version: 1.12.1
-  resolution: "hookified@npm:1.12.1"
-  checksum: 10c0/fe8d74ee49d1f79677dcdff7606eeb731f7a7dc59f61ec2141a11e3bb94ff6532f870649b900fa9f68568f410c504a338d8732e4d1abe61b426e645c37862e50
+  version: 1.12.2
+  resolution: "hookified@npm:1.12.2"
+  checksum: 10c0/e28e2702d354d45bfdf5ccccc98e8e96ac2f7f37bd2efc556cd030cf10c014e3749c08a1e2a6f185ec31d7fe273179f7ac8eb5c2f0d047b5ebd13fa953169181
   languageName: node
   linkType: hard
 
