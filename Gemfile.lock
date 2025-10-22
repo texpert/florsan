@@ -242,6 +242,7 @@ GEM
     non-digest-assets (2.5.0)
       activesupport (>= 6.0, < 8.1)
       sprockets (~> 4.0)
+    openssl (3.3.1)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -439,6 +440,7 @@ DEPENDENCIES
   localhost
   net-http
   non-digest-assets (~> 2.5)
+  openssl
   pg
   psych
   puma (= 7.1.0)
