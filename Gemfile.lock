@@ -160,7 +160,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    date (3.4.1)
+    date (3.5.0)
     docile (1.4.1)
     draper (4.0.4)
       actionpack (>= 5.0)
@@ -307,7 +307,7 @@ GEM
       tsort (>= 0.2)
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
-    rake (13.3.0)
+    rake (13.3.1)
     rdoc (6.15.0)
       erb
       psych (>= 4.0.0)
@@ -396,7 +396,7 @@ GEM
     stringio (3.1.7)
     thor (1.4.0)
     tilt (2.6.1)
-    timeout (0.4.3)
+    timeout (0.4.4)
     tinymce-rails (4.9.11.1)
       railties (>= 3.1.1)
     tsort (0.2.0)
