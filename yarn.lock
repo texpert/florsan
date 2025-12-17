@@ -414,15 +414,15 @@ __metadata:
   linkType: hard
 
 "cacheable@npm:^2.2.0":
-  version: 2.3.0
-  resolution: "cacheable@npm:2.3.0"
+  version: 2.3.1
+  resolution: "cacheable@npm:2.3.1"
   dependencies:
     "@cacheable/memory": "npm:^2.0.6"
     "@cacheable/utils": "npm:^2.3.2"
-    hookified: "npm:^1.13.0"
-    keyv: "npm:^5.5.4"
-    qified: "npm:^0.5.2"
-  checksum: 10c0/8411c402a06c930b325276e39d52541121347a5d5840819b0e568e77427585977aae7ec805130120e58590761d6f6160453efe544f797a9ce855fbc8e6419f8d
+    hookified: "npm:^1.14.0"
+    keyv: "npm:^5.5.5"
+    qified: "npm:^0.5.3"
+  checksum: 10c0/62bf82cb9d9f8f7619d0f386f6bb9e7a3dc65e81ca6750b3cedf058a1337f89391309f0f54f3d532b7853f685173644a036c9b6f67638f4a5b5ba160ba8fd778
   languageName: node
   linkType: hard
 
@@ -919,7 +919,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hookified@npm:^1.13.0":
+"hookified@npm:^1.13.0, hookified@npm:^1.14.0":
   version: 1.14.0
   resolution: "hookified@npm:1.14.0"
   checksum: 10c0/8624a2c04d8b661c871e1bf2d1b67d2587b3b59226926690f102f706d92352e3f154129d877611af9e364b08221ce6845ba5873b91e3e95211cef60d66589190
@@ -1090,6 +1090,15 @@ __metadata:
   dependencies:
     "@keyv/serialize": "npm:^1.1.1"
   checksum: 10c0/8dad7f61022c6348c4c691a19468b7c238198252edbd3cc08277d95253c137af7ce5ffd763b6ffded4a75cbe03dc3134f1adcd3dd26c5767c2c9c254e3b39001
+  languageName: node
+  linkType: hard
+
+"keyv@npm:^5.5.5":
+  version: 5.5.5
+  resolution: "keyv@npm:5.5.5"
+  dependencies:
+    "@keyv/serialize": "npm:^1.1.1"
+  checksum: 10c0/d0b8c5ffbfbaa98055e14b3c58ecf92fec2f8c4ad2a2a35fff1a146e82444ae0b969918fb6ab3281f6c16282cafb1239cc115c953cadf12838f1c45a97a5e2b8
   languageName: node
   linkType: hard
 
@@ -1424,7 +1433,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qified@npm:^0.5.2":
+"qified@npm:^0.5.3":
   version: 0.5.3
   resolution: "qified@npm:0.5.3"
   dependencies:
