@@ -7,8 +7,8 @@
 * Rails version: 8.1.1
 
 * Only for running ESLint and stylelint
-  * Node JS (used only for running ESLint and stylelint) version: 24.11.0
-  * Yarn 4.10.3
+  * Node JS (used only for running ESLint and stylelint) version: 24.12.0
+  * Yarn 4.12.0
 
 * System dependencies
 

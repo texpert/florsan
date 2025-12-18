@@ -16,5 +16,5 @@
   "repository": "https://github.com/texpert/florsan.git",
   "author": "Aurel Branzeanu <branzeanu.aurel@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.12.0"
 }
