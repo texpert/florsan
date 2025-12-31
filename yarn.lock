@@ -911,11 +911,11 @@ __metadata:
   linkType: hard
 
 "hashery@npm:^1.2.0, hashery@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "hashery@npm:1.3.0"
+  version: 1.4.0
+  resolution: "hashery@npm:1.4.0"
   dependencies:
-    hookified: "npm:^1.13.0"
-  checksum: 10c0/44457499d8a4602c5049771b96d6c151f15f241be6e990c2a393a47217457ba7fc41cc0f2ff01b8ea856d7fe12dd33e3c86a32c95b8aeaf590f53ca9a8efe1a1
+    hookified: "npm:^1.14.0"
+  checksum: 10c0/34e0c72f7eac78676ee81f7b4f8263cbc591d2eb66229c3fd8812d006362a43436038b07e07580d6cfa512954d674a01a045e0d4c6968cc13c1d817d638bfcbf
   languageName: node
   linkType: hard
 
