@@ -55,9 +55,9 @@ __metadata:
   linkType: hard
 
 "@csstools/css-syntax-patches-for-csstree@npm:^1.0.19":
-  version: 1.0.23
-  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.0.23"
-  checksum: 10c0/2a64bf62a1d816bfaf204935f32bfd8ea9c54d4296a3115155caa3f4e08aca828481ed320234de9ea55ad51b177450b45698b44398dcf6c7e69174fbce89929e
+  version: 1.0.25
+  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.0.25"
+  checksum: 10c0/a24229cc44cd64642ba76c73f59e7b0b00cfaffd992bf515d32f266aa68b983d9a945ebf8d45c90671d1e2c775a225d8b6257b01fdfeb6602c0c1f7e3faf77c0
   languageName: node
   linkType: hard
 
