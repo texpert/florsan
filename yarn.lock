@@ -1689,7 +1689,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:17.0.0":
+"stylelint@npm:^17.0.0":
   version: 17.0.0
   resolution: "stylelint@npm:17.0.0"
   dependencies:
