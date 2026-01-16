@@ -40,7 +40,7 @@ jobs:
       - name: install app dependencies
         run: yarn install --frozen-lockfile
       - name: Stylelint
-        run: yarn stylelint "**/*.{css,js,scss}" -f github
+        run: yarn stylelint "**/*.{css,js,scss}" -f unix
 
   rubocop:
     if: |
