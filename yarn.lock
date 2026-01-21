@@ -242,14 +242,14 @@ __metadata:
   linkType: hard
 
 "@keyv/bigmap@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "@keyv/bigmap@npm:1.3.0"
+  version: 1.3.1
+  resolution: "@keyv/bigmap@npm:1.3.1"
   dependencies:
-    hashery: "npm:^1.2.0"
-    hookified: "npm:^1.13.0"
+    hashery: "npm:^1.4.0"
+    hookified: "npm:^1.15.0"
   peerDependencies:
-    keyv: ^5.5.4
-  checksum: 10c0/68fe63451097067d8359dc25b7e5b832fe9d99493ca32602686026c8d14c9ca7ecaf19312df9420c7f54df8de1b26e7305f9189fa364a82f39730710eb895f9e
+    keyv: ^5.6.0
+  checksum: 10c0/acc6a4a5edf462ce23e95672ab4bfaf7cd1941dff6bf3a2f671ce467961ace1fac9d3eb75a9ed9a8e92012e00a7d8b16ad1677bc539a52c3ad0cec31473e2349
   languageName: node
   linkType: hard
 
@@ -960,7 +960,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hashery@npm:^1.2.0, hashery@npm:^1.3.0":
+"hashery@npm:^1.3.0, hashery@npm:^1.4.0":
   version: 1.4.0
   resolution: "hashery@npm:1.4.0"
   dependencies:
