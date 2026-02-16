@@ -46,12 +46,12 @@ __metadata:
   linkType: hard
 
 "@csstools/css-calc@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "@csstools/css-calc@npm:3.1.0"
+  version: 3.1.1
+  resolution: "@csstools/css-calc@npm:3.1.1"
   peerDependencies:
     "@csstools/css-parser-algorithms": ^4.0.0
     "@csstools/css-tokenizer": ^4.0.0
-  checksum: 10c0/86ba490766bc8b93179629d48bbdb3d6a5012de83ed9197a8bf44851d1d7638105c4fc88082cbb16fda2697e4f23c9cb54d7812ed742e4b66b1660cc2e942994
+  checksum: 10c0/6efcc016d988edf66e54c7bad03e352d61752cbd1b56c7557fd013868aab23505052ded8f912cd4034e216943ea1e04c957d81012489e3eddc14a57b386510ef
   languageName: node
   linkType: hard
 
