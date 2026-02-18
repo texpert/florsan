@@ -251,7 +251,7 @@ GEM
       sprockets (~> 4.0)
     openssl (4.0.1)
     parallel (1.27.0)
-    parser (3.3.10.1)
+    parser (3.3.10.2)
       ast (~> 2.4.1)
       racc
     pg (1.6.3)
