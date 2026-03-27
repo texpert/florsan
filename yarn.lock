@@ -36,12 +36,12 @@ __metadata:
   linkType: hard
 
 "@cacheable/utils@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "@cacheable/utils@npm:2.4.0"
+  version: 2.4.1
+  resolution: "@cacheable/utils@npm:2.4.1"
   dependencies:
-    hashery: "npm:^1.5.0"
+    hashery: "npm:^1.5.1"
     keyv: "npm:^5.6.0"
-  checksum: 10c0/07803578b765a73e177f56086bc3b3cbeec6fcf5f2a1458b0469e63dc95c9afe1ba0a208110e6c7c59bfd8ca4c7ac84a5d8146c1799287bb716073ad8e054062
+  checksum: 10c0/ca2af47636ed27ab26dfedf12add639f42b90c289ecd5d816fb7a299074d9df463751745a83abfb81f6236a70c8ea40f0902e984869638a5ca3a7274e203f987
   languageName: node
   linkType: hard
 
@@ -65,14 +65,14 @@ __metadata:
   linkType: hard
 
 "@csstools/css-syntax-patches-for-csstree@npm:^1.0.29":
-  version: 1.1.1
-  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.1.1"
+  version: 1.1.2
+  resolution: "@csstools/css-syntax-patches-for-csstree@npm:1.1.2"
   peerDependencies:
     css-tree: ^3.2.1
   peerDependenciesMeta:
     css-tree:
       optional: true
-  checksum: 10c0/947f82e9e8af0512f1d6600f68da1bbe8d15112fa73435169608a68dcf20262ae517c799202c86a6c3bc889d0e9fab724ad5661a3aa98432390f8f9765b86ddc
+  checksum: 10c0/1c320718c2ad3002f9f13e8d6f149416168be346bd4910ff8eb5bf1bd57fa1a54e93dd1b00026269533a3117a18e742b9cf6d99e92527145a0d08d6f4075eb34
   languageName: node
   linkType: hard
 
@@ -885,7 +885,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hashery@npm:^1.4.0, hashery@npm:^1.5.0":
+"hashery@npm:^1.4.0, hashery@npm:^1.5.1":
   version: 1.5.1
   resolution: "hashery@npm:1.5.1"
   dependencies:
