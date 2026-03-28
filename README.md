@@ -1,5 +1,3 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/0c4a2c179abd96826e02/maintainability)](https://codeclimate.com/github/texpert/florsan/maintainability)
-
 # README
 
 * Ruby version: 3.4.8
