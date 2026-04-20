@@ -43,6 +43,12 @@
     },
     "eslint@10.2.1": {
       "unplugged": true
+    },
+    "mdn-data": {
+      "unplugged": true
+    },
+    "stylelint@17.8.0": {
+      "unplugged": true
     }
   }
 }
