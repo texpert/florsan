@@ -36,5 +36,19 @@
   "repository": "https://github.com/texpert/florsan.git",
   "author": "Aurel Branzeanu <branzeanu.aurel@gmail.com>",
   "license": "MIT",
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.14.1",
+  "dependenciesMeta": {
+    "@eslint/js@10.0.1": {
+      "unplugged": true
+    },
+    "eslint@10.2.1": {
+      "unplugged": true
+    },
+    "mdn-data": {
+      "unplugged": true
+    },
+    "stylelint@17.8.0": {
+      "unplugged": true
+    }
+  }
 }

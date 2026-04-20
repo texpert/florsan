@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 9
   cacheKey: 10c0
 
 "@babel/code-frame@npm:^7.0.0":
@@ -829,6 +829,15 @@ __metadata:
     stylelint-config-sass-guidelines: "npm:^13.0.0"
     stylelint-order: "npm:^8.1.1"
     stylelint-scss: "npm:^7.0.0"
+  dependenciesMeta:
+    "@eslint/js@10.0.1":
+      unplugged: true
+    eslint@10.2.1:
+      unplugged: true
+    mdn-data:
+      unplugged: true
+    stylelint@17.8.0:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
