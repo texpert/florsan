@@ -11,7 +11,7 @@ export default [
             }
         }
     },
-    js.configs.recommended,
+    js?.configs?.recommended ?? {},
     {
         files: ["**/*.js", "**/*.cjs"],
         rules: {
