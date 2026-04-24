@@ -825,7 +825,7 @@ __metadata:
     globals: "npm:17.5.0"
     postcss: "npm:^8.5.10"
     postcss-scss: "npm:^4.0.9"
-    stylelint: "npm:^17.8.0"
+    stylelint: "npm:^17.9.0"
     stylelint-config-sass-guidelines: "npm:^13.0.0"
     stylelint-order: "npm:^8.1.1"
     stylelint-scss: "npm:^7.0.0"
