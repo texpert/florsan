@@ -39,7 +39,7 @@ environment ENV['RACK_ENV'] || ENV['RAILS_ENV'] || 'development'
 
 if workers_count > 1
   workers workers_count
-  # prune_bundler
+  prune_bundler
   fork_worker
 end
 
