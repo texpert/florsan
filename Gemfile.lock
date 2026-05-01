@@ -121,7 +121,7 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.9.1)
+    camaleon_cms (2.9.2)
       addressable
       aws-sdk-s3 (~> 1)
       bcrypt
@@ -136,8 +136,10 @@ GEM
       jquery-rails
       meta-tags (~> 2.0)
       mini_magick
-      non-digest-assets (~> 2.0)
+      net-http
+      non-digest-assets (~> 2.6)
       sprockets-rails (>= 3.5.1)
+      tempfile
       tinymce-rails (< 5)
       will_paginate
       will_paginate-bootstrap
@@ -397,6 +399,7 @@ GEM
       sprockets (>= 3.0.0)
     stackprof (0.2.28)
     stringio (3.2.0)
+    tempfile (0.3.1)
     thor (1.5.0)
     tilt (2.7.0)
     timeout (0.6.1)
@@ -439,7 +442,7 @@ DEPENDENCIES
   bootsnap (>= 1.8.1)
   brakeman
   bundler-audit
-  camaleon_cms (>= 2.8.3)
+  camaleon_cms (>= 2.9.2)
   capybara (>= 3.26)
   dartsass-sprockets
   draper (>= 3)
