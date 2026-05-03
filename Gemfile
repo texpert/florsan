@@ -27,6 +27,7 @@ gem 'turbolinks', '~> 5'
 group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
+  gem 'dotenv'
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
