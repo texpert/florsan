@@ -56,10 +56,10 @@ Rails.application.configure do
   config.active_support.deprecation = :log
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
+    logger           = ActiveSupport::Logger.new($stdout)
     logger.formatter = config.log_formatter
-    config.log_tags = [ :uuid, ->(request) { "PID: #{Process.pid}" } ]
-    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+    config.log_tags = [:uuid, ->(_request) { "PID: #{Process.pid}" }]
+    config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
 
   # Raise an error on page load if there are pending migrations.
