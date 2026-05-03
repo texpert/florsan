@@ -1,7 +1,6 @@
 # README
 
 * Ruby version: 3.4.9
-
 * Rails version: 8.1.3
 
 * Only for running ESLint and stylelint
@@ -152,3 +151,33 @@ Run the following command:
 ```bash
 yarn stylelint "**/*.{css,js,scss}"
 ```
+
+## Running in development
+
+### Starting with Puma in single mode
+
+```bash
+bundle exec rails s
+```
+
+or, given that the `rails` binstub is not broken or removed, just
+```bash
+rails s
+```
+
+### Starting with Puma in clustered mode with 2 workers
+
+```bash
+WEB_CONCURRENCY=2 rails s
+```
+
+macOS, though, doesn't allow the above, so:
+
+```bash
+OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES WEB_CONCURRENCY=2 rails s
+```
+
+Why is the above workaround necessary on macOS?
+- It is a known conflict on macOS where the system's security features crash any process that attempts to initialize 
+  Objective-C libraries (like those used by the pg gem for database connections or system SSL libraries) after a fork()
+  has already occurred

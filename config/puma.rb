@@ -1,5 +1,21 @@
 # frozen_string_literal: true
 
+# The `localhost` gem is used in development, but it started giving errors in Puma multi-process with WEB_CONCURRENCY=2:
+# ERROR: Please specify the SSL key via 'key=' or 'key_pem='
+#
+# Ensure the master process knows about the localhost gem by adding it directly to your Puma configuration file.
+# In single-mode, rails s boots the application before starting the server. In clustered mode without preload_app!,
+# Puma's "Master" process handles port binding first, then forks workers, which then load the application.
+# Since localhost is usually loaded via the Gemfile during the app boot phase, it's "too late" for the Master process
+# to use its automatic SSL certificate generation features.
+if ENV.fetch('RAILS_ENV', 'development') == 'development'
+  require 'dotenv/load'
+  require 'localhost'
+
+  $stdout.sync = true
+  $stderr.sync = true
+end
+
 # This configuration file will be evaluated by Puma. The top-level methods that
 # are invoked here are part of Puma's configuration DSL. For more information
 # about methods provided by the DSL, see https://puma.io/puma/Puma/DSL.html.
