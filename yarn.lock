@@ -828,7 +828,7 @@ __metadata:
     stylelint: "npm:^17.11.0"
     stylelint-config-sass-guidelines: "npm:^13.0.0"
     stylelint-order: "npm:^8.1.1"
-    stylelint-scss: "npm:^7.1.0"
+    stylelint-scss: "npm:^7.1.1"
   dependenciesMeta:
     "@eslint/js@10.0.1":
       unplugged: true
@@ -1619,9 +1619,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "stylelint-scss@npm:7.1.0"
+"stylelint-scss@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "stylelint-scss@npm:7.1.1"
   dependencies:
     "@csstools/css-calc": "npm:^3.2.0"
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
@@ -1636,7 +1636,7 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.8.2 || ^17.0.0
-  checksum: 10c0/12e47ce0093d7d08aa2323fdea2bb632cbc39a1470772ca237a0325285af66eeea29c67b3fff7763bfcfcc437479541238b791ce126cd9928c0b73a5ae29b228
+  checksum: 10c0/5e3c9084788debdc1d616ba8f7a49431449b7f2e7c80c7b1d311266cc2907fe4c8fc174f725b182422fa0937f168e384de8a9b8eb2c8534b9d7ddc2d08b2c874
   languageName: node
   linkType: hard
 
