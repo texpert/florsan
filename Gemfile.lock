@@ -106,7 +106,7 @@ GEM
       samovar (~> 2.1)
     base64 (0.3.0)
     bcrypt (3.1.22)
-    benchmark-ips (2.14.0)
+    benchmark-ips (2.15.1)
     bigdecimal (4.1.2)
     bindex (0.8.1)
     bootsnap (1.24.4)
