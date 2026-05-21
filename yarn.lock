@@ -298,9 +298,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "@stylistic/stylelint-plugin@npm:5.1.0"
+"@stylistic/stylelint-plugin@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@stylistic/stylelint-plugin@npm:5.2.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
     "@csstools/css-tokenizer": "npm:^4.0.0"
@@ -311,7 +311,7 @@ __metadata:
     style-search: "npm:^0.1.0"
   peerDependencies:
     stylelint: ^17.6.0
-  checksum: 10c0/7094f5d31092653c7d0d83ed7baacdcc6a781837fc78c12dd4bc66bef1f1179e63e5a9499d6531c84176a8548ad354e97915765a0eb93b1e50163f2ae5363a2d
+  checksum: 10c0/de3124be14cc6e7bae29e9cd56531c96aea571b9232039b020d187cd51fff9c938ad6d3f577ef680510cf44cd881463764858d19460295bc2f024f7cbd532a1e
   languageName: node
   linkType: hard
 
@@ -827,12 +827,12 @@ __metadata:
   resolution: "florsan@workspace:."
   dependencies:
     "@eslint/js": "npm:^10.0.1"
-    "@stylistic/stylelint-plugin": "npm:^5.1.0"
+    "@stylistic/stylelint-plugin": "npm:^5.2.0"
     eslint: "npm:^10.4.0"
     globals: "npm:17.6.0"
     postcss: "npm:^8.5.15"
     postcss-scss: "npm:^4.0.9"
-    stylelint: "npm:^17.11.1"
+    stylelint: "npm:^17.12.0"
     stylelint-config-sass-guidelines: "npm:^13.0.0"
     stylelint-order: "npm:^8.1.1"
     stylelint-scss: "npm:^7.1.1"
