@@ -346,11 +346,11 @@ __metadata:
   linkType: hard
 
 "acorn@npm:^8.16.0":
-  version: 8.16.0
-  resolution: "acorn@npm:8.16.0"
+  version: 8.17.0
+  resolution: "acorn@npm:8.17.0"
   bin:
     acorn: bin/acorn
-  checksum: 10c0/c9c52697227661b68d0debaf972222d4f622aa06b185824164e153438afa7b08273432ca43ea792cadb24dada1d46f6f6bb1ef8de9956979288cc1b96bf9914e
+  checksum: 10c0/5dcefea5f8f023b6cc24cbe71fb5a8112b601d36c4fa07d14e4e6ffc2ee47383332c46b36c766d9437725aa6660156eae50efa0c838719823b50d7c327c4ed42
   languageName: node
   linkType: hard
 
@@ -1377,12 +1377,12 @@ __metadata:
   linkType: hard
 
 "postcss-selector-parser@npm:^7.1.1":
-  version: 7.1.2
-  resolution: "postcss-selector-parser@npm:7.1.2"
+  version: 7.1.4
+  resolution: "postcss-selector-parser@npm:7.1.4"
   dependencies:
     cssesc: "npm:^3.0.0"
     util-deprecate: "npm:^1.0.2"
-  checksum: 10c0/dcde475e5f11aa5d989697ea93c5364c03e25e647e2ad0189e6f7828b364c01a3d436f725f2b278760e98345c783e957971a86d677c2b82bca9977caec98b151
+  checksum: 10c0/3d533d25bab83592e7134be0435e6cb1e2865f5e7d9fde65f1e7e1c75ccc5905168c9f55b05d2a3e10d01914a178433d3a54eab003f5ef6aa9a9d6816926caa2
   languageName: node
   linkType: hard
 
