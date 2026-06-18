@@ -200,7 +200,7 @@ GEM
     google-protobuf (4.35.1-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
-    i18n (1.14.8)
+    i18n (1.15.1)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
     ipaddress (0.8.3)
