@@ -8,7 +8,7 @@
     "@eslint/js": "^10.0.1",
     "@stylistic/stylelint-plugin": "^5.2.0",
     "eslint": "^10.5.0",
-    "globals": "17.6.0",
+    "globals": "17.7.0",
     "postcss": "^8.5.15",
     "postcss-scss": "^4.0.9",
     "stylelint": "^17.13.0",
