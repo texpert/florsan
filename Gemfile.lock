@@ -380,7 +380,7 @@ GEM
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    rubyzip (3.4.0)
+    rubyzip (3.4.1)
     samovar (2.5.1)
       console (~> 1.0)
     sass-embedded (1.101.0)
