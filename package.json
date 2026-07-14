@@ -7,9 +7,9 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/stylelint-plugin": "^5.2.1",
-    "eslint": "^10.6.0",
+    "eslint": "^10.7.0",
     "globals": "17.7.0",
-    "postcss": "^8.5.16",
+    "postcss": "^8.5.19",
     "postcss-scss": "^4.0.9",
     "stylelint": "^17.14.0",
     "stylelint-config-sass-guidelines": "^13.0.0",
