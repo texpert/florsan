@@ -9,7 +9,7 @@
     "@stylistic/stylelint-plugin": "^5.2.1",
     "eslint": "^10.7.0",
     "globals": "17.7.0",
-    "postcss": "^8.5.21",
+    "postcss": "^8.5.22",
     "postcss-scss": "^4.0.9",
     "stylelint": "^17.14.1",
     "stylelint-config-sass-guidelines": "^13.0.0",
