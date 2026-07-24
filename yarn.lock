@@ -94,11 +94,11 @@ __metadata:
   linkType: hard
 
 "@csstools/selector-resolve-nested@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@csstools/selector-resolve-nested@npm:4.0.0"
+  version: 4.0.1
+  resolution: "@csstools/selector-resolve-nested@npm:4.0.1"
   peerDependencies:
     postcss-selector-parser: ^7.1.1
-  checksum: 10c0/f6bccfe24a47c3e55710d421740550b868bbe7f0820f32d14d1eb737eefe7ec26261fb726cc5cfdf8236b3173d0a657ebdc9602e0c53824603f719b14a76bcaf
+  checksum: 10c0/4631680952b9c5a8447165b0161341e12cfad3ae45196733d12b3c34fb171c596040d654d0573db02cc2f2649fab3b4df86d4ddc743521c762be8373b32d9f1f
   languageName: node
   linkType: hard
 
@@ -423,11 +423,11 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^5.0.5":
-  version: 5.0.7
-  resolution: "brace-expansion@npm:5.0.7"
+  version: 5.0.8
+  resolution: "brace-expansion@npm:5.0.8"
   dependencies:
     balanced-match: "npm:^4.0.2"
-  checksum: 10c0/4769109c3c082de178e449a371bcad50d51ab468f644bce2dd9188efe0cf0a080ed102105d7fc8577382cedc45bad7e6443a91bf3d8102264ee8cf927dbaf205
+  checksum: 10c0/73304caafd00fdc5b0168e693ac15bf25b6357dec76d1195fcd628fe2cf99c46f9c889a7ecfa3cfe236dbd2d5ce3e27a6ccc4370b46d475d0d19081e11f86019
   languageName: node
   linkType: hard
 
