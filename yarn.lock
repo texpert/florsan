@@ -298,20 +298,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/stylelint-plugin@npm:^5.2.1":
-  version: 5.2.1
-  resolution: "@stylistic/stylelint-plugin@npm:5.2.1"
+"@stylistic/stylelint-plugin@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@stylistic/stylelint-plugin@npm:5.3.0"
   dependencies:
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
     "@csstools/css-tokenizer": "npm:^4.0.0"
     "@csstools/media-query-list-parser": "npm:^5.0.0"
-    postcss: "npm:^8.5.8"
-    postcss-selector-parser: "npm:^7.1.1"
+    postcss: "npm:^8.5.26"
+    postcss-selector-parser: "npm:^7.1.5"
     postcss-value-parser: "npm:^4.2.0"
     style-search: "npm:^0.1.0"
   peerDependencies:
     stylelint: ^17.6.0
-  checksum: 10c0/1d91636e454bf90d598e8161a5996bd2c96b25c42da3d2968d81f0d5e93b80671011b6ae0fd0c995d89efb8b57af3741044d747a4e69e663e28c6918c7c97311
+  checksum: 10c0/9a498172b23d4e1db468db6361d54702db5c6c0493b9d56e52d3ee01161737f3ebff77668a395840e6e2f73f7e36d7b17f5ac419a4f6a337e295479d73dea879
   languageName: node
   linkType: hard
 
@@ -827,7 +827,7 @@ __metadata:
   resolution: "florsan@workspace:."
   dependencies:
     "@eslint/js": "npm:^10.0.1"
-    "@stylistic/stylelint-plugin": "npm:^5.2.1"
+    "@stylistic/stylelint-plugin": "npm:^5.3.0"
     eslint: "npm:^10.8.1"
     globals: "npm:17.9.0"
     postcss: "npm:^8.5.26"
@@ -1376,7 +1376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^7.1.1, postcss-selector-parser@npm:^7.1.4":
+"postcss-selector-parser@npm:^7.1.1, postcss-selector-parser@npm:^7.1.4, postcss-selector-parser@npm:^7.1.5":
   version: 7.1.5
   resolution: "postcss-selector-parser@npm:7.1.5"
   dependencies:
