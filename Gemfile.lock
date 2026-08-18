@@ -124,12 +124,12 @@ GEM
       recaptcha (>= 5.0)
     cama_meta_tag (1.7.2)
       rails (>= 4.1.0)
-    camaleon_cms (2.9.2)
+    camaleon_cms (2.9.3)
       addressable
       aws-sdk-s3 (~> 1)
       bcrypt
       breadcrumbs_on_rails
-      cama_contact_form (~> 0.1.0)
+      cama_contact_form (~> 0.1.12)
       cama_meta_tag
       cancancan (>= 2.0, < 4)
       dartsass-sprockets
@@ -457,7 +457,7 @@ DEPENDENCIES
   bootsnap (>= 1.8.1)
   brakeman
   bundler-audit
-  camaleon_cms (>= 2.9.2)
+  camaleon_cms (>= 2.9.3)
   capybara (>= 3.26)
   dartsass-sprockets
   dotenv
