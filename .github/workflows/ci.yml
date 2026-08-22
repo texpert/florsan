@@ -3,8 +3,11 @@ permissions:
   contents: read
   pull-requests: write
 on: [push]
+# Scope by ref: this workflow triggers on push, where github.event.pull_request.number
+# is always empty — with it, every push across all branches shared one concurrency
+# group and cancelled each other's in-flight runs.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -74,3 +77,34 @@ jobs:
         run: bin/bundler-audit check --update --ignore CVE-2018-18260 CVE-2024-48652 CVE-2026-1776
       - name: Security audit application code
         run: bin/brakeman
+  rspec:
+    if: |
+      !contains(github.event.pull_request.title, '[skip ci]')
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: florsan_dev
+          POSTGRES_PASSWORD: florsan_pass
+          POSTGRES_DB: florsan_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd="pg_isready -U florsan_dev"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+    env:
+      RAILS_ENV: test
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Prepare test database
+        run: bin/rails db:test:prepare
+      - name: Run RSpec
+        run: bundle exec rspec
