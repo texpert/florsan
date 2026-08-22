@@ -11,6 +11,13 @@ RSpec.describe 'Frontend' do
     expect(response).to have_http_status(:ok)
   end
 
+  it 'serves robots.txt', :aggregate_failures do
+    get cama_robots_path
+    expect(response).to have_http_status(:ok)
+    expect(response.media_type).to eq('text/plain')
+    expect(response.body).to include('Sitemap:')
+  end
+
   describe 'posts with a nil published_at' do
     let(:post_type) { CamaleonCms::Site.first.post_types.find_by(slug: 'post') }
 
