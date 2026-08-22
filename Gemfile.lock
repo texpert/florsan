@@ -170,6 +170,7 @@ GEM
       sprockets-rails
       tilt
     date (3.5.1)
+    diff-lcs (1.6.2)
     dotenv (3.2.0)
     draper (4.0.6)
       actionpack (>= 5.0)
@@ -181,6 +182,13 @@ GEM
     drb (2.2.3)
     erb (6.0.7)
     erubi (1.13.1)
+    factory_bot (6.6.0)
+      activesupport (>= 6.1.0)
+    factory_bot_rails (6.5.1)
+      factory_bot (~> 6.5)
+      railties (>= 6.1.0)
+    faker (3.8.0)
+      i18n (>= 1.8.11, < 2)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -341,6 +349,23 @@ GEM
     request_store (1.7.0)
       rack (>= 1.4)
     rexml (3.4.4)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.8)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-rails (8.0.4)
+      actionpack (>= 7.2)
+      activesupport (>= 7.2)
+      railties (>= 7.2)
+      rspec-core (>= 3.13.0, < 5.0.0)
+      rspec-expectations (>= 3.13.0, < 5.0.0)
+      rspec-mocks (>= 3.13.0, < 5.0.0)
+      rspec-support (>= 3.13.0, < 5.0.0)
+    rspec-support (3.13.7)
     rubocop (1.89.0)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -462,6 +487,8 @@ DEPENDENCIES
   dartsass-sprockets
   dotenv
   draper (>= 3)
+  factory_bot_rails
+  faker
   genericons-rails
   localhost
   net-http
@@ -472,6 +499,7 @@ DEPENDENCIES
   puma (= 8.0.2)
   rack-mini-profiler (~> 4.0)
   rails (~> 8.1)
+  rspec-rails
   rubocop
   rubocop-capybara
   rubocop-factory_bot

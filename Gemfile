@@ -28,6 +28,9 @@ group :development, :test do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'dotenv'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec-rails'
   gem 'rubocop', require: false
   gem 'rubocop-capybara', require: false
   gem 'rubocop-factory_bot', require: false
