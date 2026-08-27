@@ -55,9 +55,9 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .tool-versions
+          rubygems: 4.0.19
           bundler-cache: true
-      - name: Generate binstubs
-        run: bundle binstubs rubocop
       - name: Lint Ruby files
         run: bin/rubocop --parallel
   security:
@@ -70,11 +70,11 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .tool-versions
+          rubygems: 4.0.19
           bundler-cache: true
-      - name: Generate binstubs
-        run: bundle binstubs bundler bundler-audit brakeman --force
       - name: Security audit dependencies
-        run: bin/bundler-audit check --update --ignore CVE-2018-18260 CVE-2024-48652 CVE-2026-1776
+        run: bin/bundle-audit check --update --ignore CVE-2018-18260 CVE-2024-48652
       - name: Security audit application code
         run: bin/brakeman
   rspec:
@@ -103,8 +103,10 @@ jobs:
       - name: Setup Ruby and install gems
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: .tool-versions
+          rubygems: 4.0.19
           bundler-cache: true
       - name: Prepare test database
         run: bin/rails db:test:prepare
       - name: Run RSpec
-        run: bundle exec rspec
+        run: bin/rspec
