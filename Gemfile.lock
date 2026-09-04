@@ -198,13 +198,13 @@ GEM
     genericons-rails (0.5.0)
     globalid (1.4.0)
       activesupport (>= 6.1)
-    google-protobuf (4.36.0)
+    google-protobuf (4.36.1)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.36.0-x86_64-darwin)
+    google-protobuf (4.36.1-x86_64-darwin)
       bigdecimal
       rake (~> 13.3)
-    google-protobuf (4.36.0-x86_64-linux-gnu)
+    google-protobuf (4.36.1-x86_64-linux-gnu)
       bigdecimal
       rake (~> 13.3)
     i18n (1.15.2)
@@ -240,7 +240,7 @@ GEM
     matrix (0.4.3)
     meta-tags (2.23.0)
       actionpack (>= 6.0.0)
-    mini_magick (5.3.3)
+    mini_magick (5.4.0)
       logger
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
