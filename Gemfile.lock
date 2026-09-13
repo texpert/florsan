@@ -490,6 +490,7 @@ DEPENDENCIES
   factory_bot_rails
   faker
   genericons-rails
+  json (< 3.0.0)
   localhost
   net-http
   non-digest-assets (~> 2.6)
