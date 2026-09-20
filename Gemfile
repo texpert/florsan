@@ -6,7 +6,16 @@ ruby file: '.tool-versions'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.8.1', require: false
-gem 'camaleon_cms', '>= 2.9.4'
+# CAMALEON_CMS_PATH sources the CMS from a local checkout instead of the released gem, which is how
+# the Core compatibility workflow (.github/workflows/core_compat.yml) runs this suite against an
+# unreleased camaleon_cms commit. The committed Gemfile.lock belongs to the released gem: after a
+# local run with the variable set, restore it with `git checkout Gemfile.lock`.
+camaleon_cms_path = ENV.fetch('CAMALEON_CMS_PATH', '')
+if camaleon_cms_path.empty?
+  gem 'camaleon_cms', '>= 2.9.4'
+else
+  gem 'camaleon_cms', path: camaleon_cms_path
+end
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-sprockets'
 gem 'draper', '>= 3'
