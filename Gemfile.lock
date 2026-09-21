@@ -96,7 +96,7 @@ GEM
     aws-sdk-kms (1.132.0)
       aws-sdk-core (~> 3, >= 3.256.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.232.0)
+    aws-sdk-s3 (1.232.1)
       aws-sdk-core (~> 3, >= 3.256.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -210,7 +210,7 @@ GEM
       rake (~> 13.3)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    io-console (0.9.3)
+    io-console (0.9.4)
     ipaddress (0.8.3)
     irb (1.18.0)
       pp (>= 0.6.0)
@@ -257,7 +257,7 @@ GEM
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.3.0)
+    net-protocol (0.4.0)
       timeout
     net-smtp (0.5.1)
       net-protocol
