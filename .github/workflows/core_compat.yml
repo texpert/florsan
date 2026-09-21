@@ -99,7 +99,7 @@ jobs:
           git --no-pager diff -- Gemfile.lock
 
       - name: Cache the bundle
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: member/vendor/bundle
           key: core-compat-florsan-${{ runner.os }}-${{ hashFiles('member/.tool-versions', 'member/Gemfile.lock') }}
