@@ -1,6 +1,6 @@
 # README
 
-* Ruby version: 3.4.10
+* Ruby version: 3.4.12
 * Rails version: 8.1.3
 
 * Only for running ESLint and stylelint
