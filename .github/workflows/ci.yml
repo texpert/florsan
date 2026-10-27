@@ -56,7 +56,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: .tool-versions
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       - name: Lint Ruby files
         run: bin/rubocop --parallel
@@ -71,7 +71,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: .tool-versions
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       - name: Security audit dependencies
         run: bin/bundle-audit check --update --ignore CVE-2018-18260 CVE-2024-48652
@@ -104,7 +104,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: .tool-versions
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           bundler-cache: true
       - name: Prepare test database
         run: bin/rails db:test:prepare

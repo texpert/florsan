@@ -83,7 +83,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: .tool-versions
-          rubygems: 4.0.19
+          rubygems: 4.0.23
           working-directory: member
 
       # `bundle lock` starts from the committed lock and unlocks only what changed: camaleon_cms, now
