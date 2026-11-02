@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby file: '.tool-versions'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.8.1', require: false
+gem 'bootsnap', '>= 1.26.1', require: false
 # CAMALEON_CMS_PATH sources the CMS from a local checkout instead of the released gem, which is how
 # the Core compatibility workflow (.github/workflows/core_compat.yml) runs this suite against an
 # unreleased camaleon_cms commit. The committed Gemfile.lock belongs to the released gem: after a
@@ -18,7 +18,7 @@ else
 end
 # gem 'camaleon_cms', git: 'https://github.com/owen2345/camaleon-cms'
 gem 'dartsass-sprockets'
-gem 'draper', '>= 3'
+gem 'draper', '>= 4.0.6'
 gem 'genericons-rails'
 gem 'json', '< 3.0.0'
 gem 'net-http' # Promoted to stdlib in Ruby 3.0, required here to avoid "already initialized constant errors"
@@ -28,7 +28,7 @@ gem 'pg'
 gem 'psych'
 gem 'puma', '8.0.2'
 gem 'rails', '~> 8.1'
-gem 'sprockets-rails', '>= 3.5.1', require: 'sprockets/railtie'
+gem 'sprockets-rails', '>= 3.5.2', require: 'sprockets/railtie'
 gem 'turbolinks', '~> 5'
 
 # Use ActiveModel has_secure_password
@@ -52,19 +52,19 @@ group :development, :test do
 end
 
 group :development do
-  gem 'benchmark-ips', '>= 2.9.1'
+  gem 'benchmark-ips', '>= 2.15.1'
   # TODO: Re-enable when the issue with ruby-statistics gem will be solved
   # gem 'derailed_benchmarks'
   gem 'localhost', require: 'localhost/authority'
   gem 'rack-mini-profiler', '~> 5.0'
   gem 'stackprof'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 4.1.0'
+  gem 'web-console', '>= 4.3.0'
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
+  gem 'capybara', '>= 3.40'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
 end
