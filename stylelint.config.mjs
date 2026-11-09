@@ -4,6 +4,16 @@ const require = createRequire(import.meta.url);
 
 // 1. Load the raw config object
 const sassGuidelines = require('stylelint-config-sass-guidelines');
+const rules = { ...sassGuidelines.rules };
+
+delete rules['declaration-block-single-line-max-declarations'];
+
+for (const [name, value] of Object.entries(rules)) {
+    if (name.startsWith('@stylistic/')) {
+        delete rules[name];
+        rules[name.replace('@stylistic/', '@stylistic/scss/')] = value;
+    }
+}
 
 /** @type {import('stylelint').Config} */
 export default {
@@ -22,7 +32,7 @@ export default {
     customSyntax: require.resolve('postcss-scss'),
 
     rules: {
-        ...sassGuidelines.rules,
+        ...rules,
         "font-family-no-missing-generic-family-keyword": [true],
         "max-nesting-depth": 2,
         "selector-no-qualifying-type": null,
