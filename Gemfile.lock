@@ -292,7 +292,7 @@ GEM
       date
       stringio
     public_suffix (7.0.5)
-    puma (8.0.2)
+    puma (8.0.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.8)
@@ -416,12 +416,12 @@ GEM
     rubyzip (3.7.0)
     samovar (2.5.1)
       console (~> 1.0)
-    sass-embedded (1.108.1)
+    sass-embedded (1.108.2)
       google-protobuf (~> 4.31)
       rake (~> 13.3)
-    sass-embedded (1.108.1-x86_64-darwin)
+    sass-embedded (1.108.2-x86_64-darwin)
       google-protobuf (~> 4.31)
-    sass-embedded (1.108.1-x86_64-linux-gnu)
+    sass-embedded (1.108.2-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
     sassc-embedded (1.80.10)
       sass-embedded (~> 1.80)
@@ -500,7 +500,7 @@ DEPENDENCIES
   openssl
   pg
   psych
-  puma (= 8.0.2)
+  puma (= 8.0.3)
   rack-mini-profiler (~> 5.0)
   rails (~> 8.1)
   rspec-rails
