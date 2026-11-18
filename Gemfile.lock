@@ -292,7 +292,7 @@ GEM
       date
       stringio
     public_suffix (7.0.5)
-    puma (8.0.3)
+    puma (8.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.8)
@@ -500,7 +500,7 @@ DEPENDENCIES
   openssl
   pg
   psych
-  puma (= 8.0.3)
+  puma (= 8.1.0)
   rack-mini-profiler (~> 5.0)
   rails (~> 8.1)
   rspec-rails
