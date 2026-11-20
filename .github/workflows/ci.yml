@@ -1,3 +1,10 @@
+# Runs on: a push to a branch of this repository.
+# Tests:   the pushed commit of this app, against the released camaleon_cms gem that Gemfile.lock
+#          pins.
+# Checks:  `test-on-push / rspec (camaleon_cms <version>)`, and the lint and audit checks.
+#
+# The checks against Camaleon code that is not released are in camaleon_master.yml and
+# core_compat.yml.
 name: "test-on-push"
 permissions:
   contents: read
