@@ -1,3 +1,10 @@
+# Runs on: a push to a branch of this repository.
+# Tests:   the pushed commit of this app, against the released camaleon_cms gem that Gemfile.lock
+#          pins.
+# Checks:  `test-on-push / rspec (camaleon_cms <version>)`, and the lint and audit checks.
+#
+# The checks against Camaleon code that is not released are in camaleon_master.yml and
+# core_compat.yml.
 name: "test-on-push"
 permissions:
   contents: read
@@ -11,6 +18,25 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Reads the camaleon_cms version that Gemfile.lock pins. The name of the rspec check shows it.
+  locked:
+    name: camaleon_cms version of Gemfile.lock
+    runs-on: ubuntu-latest
+    outputs:
+      camaleon_cms: ${{ steps.read.outputs.version }}
+    steps:
+      - name: Checkout Gemfile.lock
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+          sparse-checkout: Gemfile.lock
+          sparse-checkout-cone-mode: false
+      - name: Read the version
+        id: read
+        run: |
+          version=$(sed -n 's/^    camaleon_cms (\([0-9][0-9A-Za-z.]*\))$/\1/p' Gemfile.lock | head -n 1)
+          echo "version=${version:-unknown}" >> "$GITHUB_OUTPUT"
+
   eslint:
     if: |
       !contains(github.event.pull_request.title, '[skip ci]')
@@ -78,6 +104,8 @@ jobs:
       - name: Security audit application code
         run: bin/brakeman
   rspec:
+    name: rspec (camaleon_cms ${{ needs.locked.outputs.camaleon_cms }})
+    needs: locked
     if: |
       !contains(github.event.pull_request.title, '[skip ci]')
     runs-on: ubuntu-latest
