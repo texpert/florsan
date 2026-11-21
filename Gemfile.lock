@@ -112,7 +112,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.26.1)
       msgpack (~> 1.5)
-    brakeman (8.1.0)
+    brakeman (8.1.1)
       racc
     breadcrumbs_on_rails (4.1.0)
       railties (>= 5.0)
@@ -520,7 +520,7 @@ DEPENDENCIES
   web-console (>= 4.3.0)
 
 RUBY VERSION
-  ruby 3.4.12
+  ruby 3.4.13
 
 BUNDLED WITH
   4.0.23
