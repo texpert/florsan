@@ -147,7 +147,7 @@ GEM
       tinymce-rails (< 5)
       will_paginate
       will_paginate-bootstrap
-    cancancan (3.7.0)
+    cancancan (3.7.1)
     capybara (3.40.0)
       addressable
       matrix
